@@ -53,15 +53,17 @@
         }
     }
 
-    /* seperate submit events as divs can't be used as submit buttons directly */
+    $(document).ready(function() {
+        /* seperate submit events as divs can't be used as submit buttons directly */
 
-    // if the next button is pressed
-    $( '#login-app' ).on('click', '.btn-next-email', function(event) {
-        doEmailStep()
-    });
+        // if the next button is pressed
+        $( '#login-app' ).on('click', '.btn-next-email', function(event) {
+            doEmailStep()
+        });
 
-    // if the email form step is submitted
-    $( '#login-app' ).on('submit', '#email-form-step', function(event) {
-        event.preventDefault();
-        doEmailStep()
+        // if the email form step is submitted
+        $( '#login-app' ).on('submit', '#email-form-step', function(event) {
+            event.preventDefault();
+            doEmailStep()
+        });
     });
