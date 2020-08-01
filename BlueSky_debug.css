@@ -1,0 +1,29 @@
+/* Debug view options below */
+
+
+
+.ash-mobile-min {
+  border: 1px solid red;
+  color: red;
+}
+
+.ash {
+  border: 1px solid black;
+}
+
+
+.midday {
+  border: 1px solid green;
+}
+
+.fire {
+    border: 1px solid red;
+}
+
+.midday {
+  border: 1px solid green;
+}
+
+.ash-mobile-min {
+  border: 1px solid red;
+}
