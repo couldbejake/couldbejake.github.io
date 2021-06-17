@@ -587,10 +587,10 @@
 
     $('.adventure-choice').on('click', function(){
 
-      // Disable forcing fullscreen
+      /*
       if(isInProductionMode){
         openFullscreen($('body').get(0))
-      }
+      }*/
       chat.delta = $(this).attr('opt')
       chat.onUserStep( true )
 
