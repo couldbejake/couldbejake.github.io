@@ -33,6 +33,7 @@
 								<li><a class='nav-btn' href='#' to-section='#experience'>Experience</a></li>
 								<li><a class='nav-btn' href='#' to-section='#education'>Education</a></li>
 								<li><a class='nav-btn' href='#' to-section='#projects'>Projects</a></li>
+								<li><a class='nav-btn' href='#' to-section='#contact'>Contact</a></li>
 								<li style="list-style: none; display: inline">
 									<script type="text/javascript">
                      $(document).ready(function(){
@@ -111,6 +112,12 @@
 								<div class="skillbar-percentage" style='width:70%'></div>
 							</div>
 						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>C++</span> <span class='float-right'>60%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:70%'></div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="skill-section">
@@ -135,6 +142,12 @@
 							<p class='skill-description'><span>Adobe Photoshop</span> <span class='float-right'>65%</span></p>
 							<div class="skillbar">
 								<div class="skillbar-percentage" style='width:65%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>Java</span> <span class='float-right'>63%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:63%'></div>
 							</div>
 						</div>
 					</div>
@@ -219,43 +232,6 @@
 					</div>
 				</div>
 			</div>
-			<style media="screen">
-			.project-card {
-				border: 1px solid rgb(50, 50, 50);
-				margin-bottom: 30px;
-			}
-				.project-card-info {
-					padding-left: 0px;
-					padding-right: 0px;
-					background: aqua;
-				}
-				.project-text {
-					padding: 30px;
-				}
-				.project-title {
-					font-size: 24px;
-			    font-weight: 300;
-			    margin-bottom: 5px;
-				}
-				.project-description {
-					font-weight: 100;
-				}
-				.project-stack .project-stack-item {
-					display: inline-block;
-					font-weight: 100;
-					border: 1px solid rgb(50, 50, 50);
-					padding: 5px;
-					margin-top: 10px;
-				}
-				.social-link {
-					color: white;
-				}
-				.social-link i {
-					color: white;
-
-					margin-top: 15px;
-				}
-			</style>
 			<div class="container-fluid section-2" id='projects'>
 				<h1 class='fw-100 section-title'>Projects</h1>
 				<div class="projects">
@@ -281,10 +257,75 @@
 							</div>
 						</div>
 					</div>
+					<div class="container project-card">
+						<div class="row">
+							<div class="col-md-6 project-card-info">
+								<img src="./assets/projects/thedoorbellthatcould.png" alt="" class='w-100 zoom-hover'>
+							</div>
+							<div class="col-md-6">
+								<div class="project-text">
+										<p class="project-title">theDoorbellThatCould</p>
+										<p class="project-description">Doorbell image notifications, daily doorbell gallery and configurable randomized notification texts.</p>
+										<p class="project-description mb-0">Stack Used:</p>
+										<div class="project-stack">
+											<div class="project-stack-item">Python</div>
+											<div class="project-stack-item">HTML5</div>
+											<div class="project-stack-item">CSS3</div>
+											<div class="project-stack-item">Bootstrap</div>
+											<div class="project-stack-item">Javascript</div>
+										</div>
+										<a href='https://github.com/couldbejake/theDoorbellThatCould' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		</div>
+		<style media="screen">
 
+			.page-2 {
+				background: #171717
+			}
+			.no-padding-left {
+				padding-left: 0px;
+			}
+		</style>
+		<div class="page-2">
+			<div class='centered'>
+				<div class='container-fluid section-1' id='contact'>
+							<h1 class='fw-100 section-title'>Contact</h1>
+							<br>
+							<table class='social-links'>
+								<tr>
+									<td>PHONE</td>
+									<td>+44 7400 347852</td>
+								</tr>
+								<tr>
+									<td>EMAIL</td>
+									<td>Couldbejake@gmail.com</td>
+								</tr>
+							</table>
+							<style media="screen">
+								.links {
+									margin-top: 30px;
+								}
+								.links p a {
+									color: white;
+								}
+								.links p a:hover {
+									text-decoration: underline !important;
+								}
+							</style>
+							<div class="links">
+								<p><a href='https://www.linkedin.com/in/jake-nelson-b59812187/'>Linkedin</a></p>
+								<p><a href='https://github.com/couldbejake'>Github</a></p>
+							</div>
+
+
+				</div>
+			</div>
 		</div>
 </body>
 </html>

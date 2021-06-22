@@ -30,6 +30,16 @@ html, body {
      left: 0px;
      border-bottom: 1px solid #353535;
    }
+
+   @supports not (backdrop-filter: blur(5px))) {
+     .topbar {
+        background-color: rgb(24 24 24) !important;
+     }
+   }
+
+
+
+
    .logo {
      font-size: 25px;
      font-weight: 300;
@@ -207,3 +217,67 @@ html, body {
          margin-left: 15px;
          cursor: pointer;
        }
+
+       .page-2 {
+ 				background-color: rgb(50m);
+ 				height: 100%;
+ 				width: 100%;
+ 			}
+
+ 			.download-cv-btn {
+ 				background-color: #03f5c8;
+ 				background-image: linear-gradient(to right, #00f298, #07f7f7);
+ 				padding: 10px;
+ 				border-radius: 50px;
+ 				color: black;
+ 				width: 50%;
+ 				text-align: center;
+ 				margin-right: 15px;
+ 				cursor: pointer;
+ 			}
+ 			.contact-btn {
+ 				background-color: rgb(50, 50, 50);
+ 				color: white;
+ 				padding: 10px;
+ 				border-radius: 50px;
+ 				width: 50%;
+ 				text-align: center;
+ 				margin-left: 15px;
+ 				cursor: pointer;
+ 			}
+
+ 			.project-card {
+ 			 border: 1px solid rgb(50, 50, 50);
+ 			 margin-bottom: 30px;
+ 		 }
+ 			 .project-card-info {
+ 				 padding-left: 0px;
+ 				 padding-right: 0px;
+ 				 background: aqua;
+ 			 }
+ 			 .project-text {
+ 				 padding: 30px;
+ 			 }
+ 			 .project-title {
+ 				 font-size: 24px;
+ 				 font-weight: 300;
+ 				 margin-bottom: 5px;
+ 			 }
+ 			 .project-description {
+ 				 font-weight: 100;
+ 			 }
+ 			 .project-stack .project-stack-item {
+ 				 display: inline-block;
+ 				 font-weight: 100;
+ 				 border: 1px solid rgb(50, 50, 50);
+ 				 padding: 5px;
+ 				 margin-top: 10px;
+ 			 }
+ 			 .social-link {
+ 				 color: white;
+ 			 }
+ 			 .social-link i {
+ 				 color: white;
+
+ 				 margin-top: 15px;
+ 			 }
