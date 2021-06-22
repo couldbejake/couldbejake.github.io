@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jake Nelson Portfolio</title>
+	<script src='https://code.jquery.com/jquery-3.4.1.min.js'>
+	</script>
+	<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'>
+	</script>
+	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'>
+	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link href='./assets/timeline.css' rel='stylesheet'>
+	<link href='./assets/index.css' rel='stylesheet'>
+	<link href='./assets/mobile.css' rel='stylesheet'>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+<body>
+	<div class="topbar">
+		<div class="topbar-inner centered">
+			<div class='container-fluid'>
+				<div class='row'>
+					<div class='col-md-3'>
+						<span class='logo'>Jake Nelson</span>
+					</div>
+					<div class='col-md-9'>
+						<div class="main-menu">
+							<ul class="list-inline" id='nav-menu'>
+								<li><a class='nav-btn' href='#' to-section='#hello'>Hello</a></li>
+								<li><a class='nav-btn' href='#' to-section='#skills'>Skills</a></li>
+								<li><a class='nav-btn' href='#' to-section='#experience'>Experience</a></li>
+								<li><a class='nav-btn' href='#' to-section='#education'>Education</a></li>
+								<li><a class='nav-btn' href='#' to-section='#projects'>Projects</a></li>
+								<li style="list-style: none; display: inline">
+									<script type="text/javascript">
+                     $(document).ready(function(){
+                         $('#nav-menu').find('.nav-btn').on('click', function(){
+                             var to_section = $(this).attr('to-section')
+														 console.log(to_section)
+                             $([document.documentElement, document.body]).animate({
+                                     scrollTop: $(to_section).offset().top - 150
+                             }, 1000);
+                         })
+                     })
+									</script>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-1">
+		<div class='centered'>
+			<div class='container-fluid section-1' id='hello'>
+				<div class='row'>
+					<div class='col-md-6'>
+						<h1 class='fw-100 intro-text'>I am Jake Nelson</h1>
+						<p class='description'>I am a full stack web developer and have experience in making responsive websites using the industry standard Bootstrap framework. I have experience writing PHP, Javascript, HTML, JQuery, Bootstrap, CodeIgniter and querying databases via MySQL.</p>
+						<table class='social-links'>
+							<tr>
+								<td>PHONE</td>
+								<td>+44 7400 347852</td>
+							</tr>
+							<tr>
+								<td>EMAIL</td>
+								<td>Couldbejake@gmail.com</td>
+							</tr>
+							<tr>
+								<td>FROM</td>
+								<td>Surrey, United Kingdom</td>
+							</tr>
+						</table>
+						<div class="d-flex social-btns">
+							<div class="download-cv-btn zoom-hover">Download CV</div>
+							<div class="contact-btn zoom-hover">Contact Me</div>
+						</div>
+
+					</div>
+					<div class='col-md-6'><a href='https://github.com/couldbejake'><img class='w-100 profile-icon zoom-hover' src="./assets/jake-nelson.png"></a></div>
+				</div>
+			</div>
+			<div class="container-fluid section-2" id='skills'>
+				<h1 class='fw-100 section-title'>Skills</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="skill-section">
+							<p class='skill-description'><span>HTML 5</span> <span class='float-right'>85%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:85%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>CSS3</span> <span class='float-right'>87%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:87%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>Javascript</span> <span class='float-right'>90%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:90%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>JQuery</span> <span class='float-right'>70%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:70%'></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="skill-section">
+							<p class='skill-description'><span>Bootstrap 3</span> <span class='float-right'>80%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:80%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>PHP</span> <span class='float-right'>90%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:90%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>Codeigniter</span> <span class='float-right'>87%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:87%'></div>
+							</div>
+						</div>
+						<div class="skill-section">
+							<p class='skill-description'><span>Adobe Photoshop</span> <span class='float-right'>65%</span></p>
+							<div class="skillbar">
+								<div class="skillbar-percentage" style='width:65%'></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class='description'>I primarily focus on web development but have experience in numerous other areas. In the last few years I've been asked to work on countless other projects including REST API development using Boost/Beast in C++ and responsive app design using node.js and mongoDB.<br>
+				<br>
+				I have strong communication skills and get along well with just about anyone. I work well in a team environment, and have the patience to help others in their tasks. I'm always happy to learn new technologies and relish the challenge.<br>
+				<br>
+				Although my main focus is website development, I am particularly adept at using C#, Python and Java for projects that require rapid prototyping.</p>
+			</div>
+			<style media="screen">
+			</style>
+			<div class="container-fluid section-2" id='experience'>
+				<h1 class='fw-100 section-title'>Experience</h1>
+				<div class="timeline">
+					<div class="timeline-line"></div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item">
+							<p class='timeline-heading'><span class='fw-300'>Cambridge Quantum Computing</span> / Full Stack Web Developer</p>
+							<p class='timeline-date'>Jan 2020 – Present</p>
+							<p class='timeline-description'>During my time at CQC I developed many applications including IronBridge Messenger, an application using Post Quantum Algorithms for communication between two parties. This required me to learn about Cryptography; including Key Encapsulation, Message Signing and Encryption.<br>
+							<br>
+							I also worked on a few other projects requiring me to create my own API written in C++ using boost/beast, a C++ development library, and prior working on an inhouse API requiring me to code using C#.<br>
+							<br>
+							My role also included managing day-to-day operations of servers hosted via AWS and Azure for two separate clients, and building a C# UI using WPF.</p>
+						</div>
+					</div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item">
+							<p class='timeline-heading'><span class='fw-300'>Evident Software</span> / Front-End Web Developer</p>
+							<p class='timeline-date'>Mar 2019 – Dec 2019</p>
+							<p class='timeline-description'>During 2019 I worked at Evident Software based in Croydon. Over that period my role expanded to building database models and designing a restful API for mobile developers to utilise. I encountered many interesting projects based around responsive web design and built projects ranging from graphing applications to a job routing application; to aid in Asset Tracking.</p>
+						</div>
+					</div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item mb-0">
+							<p class='timeline-heading'><span class='fw-300'>Freelancer</span> / Freelance Web Developer</p>
+							<p class='timeline-date'>2016 - 2018</p>
+							<p class='timeline-description'>Whilst studying, I worked on a number of freelance projects for people around the globe via freelancer, including an art website named crearts.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid section-2" id='education'>
+				<h1 class='fw-100 section-title'>Education</h1>
+				<div class="timeline">
+					<div class="timeline-line"></div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item">
+							<p class='timeline-heading'><span class='fw-300'>Hull University</span> / Computer Science and AI (Year 1)</p>
+							<p class='timeline-date'>2017 - 2018</p>
+							<p class='timeline-description'>After successfully completing the first year at Hull University, I decided to take a year out to experience work in the field.</p>
+						</div>
+					</div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item">
+							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / A2</p>
+							<p class='timeline-date'>2017</p>
+							<p class='timeline-description'>Computer Science (C), Music Technology (B).</p>
+						</div>
+					</div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item">
+							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / AS</p>
+							<p class='timeline-date'>2016</p>
+							<p class='timeline-description'>EPQ (B), Maths, Physics</p>
+						</div>
+					</div>
+					<div class="timeline-element d-flex">
+						<div class="timeline-circle"></div>
+						<div class="timeline-item mb-0">
+							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / GCSEs</p>
+							<p class='timeline-date'>2015</p>
+							<p class='timeline-description'>Computer Science (A*) , English Language (A), English Literature (A), Maths (A), Physics (B), Chemistry (C), Biology (C), Geography (C), Music.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style media="screen">
+			.project-card {
+				border: 1px solid rgb(50, 50, 50);
+				margin-bottom: 30px;
+			}
+				.project-card-info {
+					padding-left: 0px;
+					padding-right: 0px;
+					background: aqua;
+				}
+				.project-text {
+					padding: 30px;
+				}
+				.project-title {
+					font-size: 24px;
+			    font-weight: 300;
+			    margin-bottom: 5px;
+				}
+				.project-description {
+					font-weight: 100;
+				}
+				.project-stack .project-stack-item {
+					display: inline-block;
+					font-weight: 100;
+					border: 1px solid rgb(50, 50, 50);
+					padding: 5px;
+					margin-top: 10px;
+				}
+				.social-link {
+					color: white;
+				}
+				.social-link i {
+					color: white;
+
+					margin-top: 15px;
+				}
+			</style>
+			<div class="container-fluid section-2" id='projects'>
+				<h1 class='fw-100 section-title'>Projects</h1>
+				<div class="projects">
+					<div class="container project-card">
+						<div class="row">
+							<div class="col-md-6 project-card-info">
+								<img src="./assets/projects/storychat.png" alt="" class='w-100 zoom-hover'>
+							</div>
+							<div class="col-md-6">
+								<div class="project-text">
+										<p class="project-title">STORYCHAT</p>
+										<p class="project-description">A programmable interactive fake-messaging app. Ideal for a marketting or advertising campaign.</p>
+										<p class="project-description mb-0">Stack Used:</p>
+										<div class="project-stack">
+											<div class="project-stack-item">HTML5</div>
+											<div class="project-stack-item">CSS3</div>
+											<div class="project-stack-item">Bootstrap</div>
+											<div class="project-stack-item">Javascript</div>
+											<div class="project-stack-item">TypeWriterJS</div>
+										</div>
+										<a href='https://github.com/couldbejake/StoryChat' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+</body>
+</html>
