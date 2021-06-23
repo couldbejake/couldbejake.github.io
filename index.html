@@ -320,3 +320,27 @@
 		</div>
 </body>
 </html>
+
+<style>
+	
+	   /* if backdrop support: very transparent and blurred */
+   @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+     .topbar {
+       background-color: rgba(0, 0, 0, 0.4) !important;
+       backdrop-filter: blur(5px) !important;
+     }
+   }
+
+   .topbar {
+     position: fixed;
+     width: 100%;
+     background-color: #1b1b1b;
+     z-index: 99;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     top: 0px;
+     left: 0px;
+     border-bottom: 1px solid #353535;
+   }
+	
+</style>
