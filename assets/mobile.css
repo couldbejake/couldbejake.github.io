@@ -1,6 +1,11 @@
 @media (max-width:480px)  {
-  .profile-icon {
-    display: none;
-  }
 
+  .topbar {
+     background-color: #1b1b1b !important;
+     position: relative;
+   }
+
+   .section-1 {
+     margin-top: -80px !important;
+   }
 }
