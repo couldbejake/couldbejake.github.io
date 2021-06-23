@@ -23,18 +23,18 @@
 		<div class="topbar-inner centered">
 			<div class='container-fluid'>
 				<div class='row'>
-					<div class='col-md-3'>
+					<div class='col-md-3 col-sm-6 col-6'>
 						<span class='logo'>Jake Nelson</span>
 					</div>
-					<div class='col-md-9'>
+					<div class='col-md-9 col-sm-6 col-6' style='position:relative'>
 						<div class="main-menu">
 							<ul class="list-inline" id='nav-menu'>
-								<li><div class='nav-btn' href='#' to-section='#hello'>Hello</div></li>
-								<li><div class='nav-btn' href='#' to-section='#skills'>Skills</div></li>
-								<li><div class='nav-btn' href='#' to-section='#experience'>Experience</div></li>
-								<li><div class='nav-btn' href='#' to-section='#education'>Education</div></li>
-								<li><div class='nav-btn' href='#' to-section='#projects'>Projects</div></li>
-								<li><div class='nav-btn' href='#' to-section='#contact'>Contact</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#hello'>Hello</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#skills'>Skills</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#experience'>Experience</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#education'>Education</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#projects'>Projects</div></li>
+								<li><div class='nav-btn' href='javascript:void(0)' to-section='#contact'>Contact</div></li>
 								<li style="list-style: none; display: inline">
 									<script type="text/javascript">
                      $(document).ready(function(){
@@ -58,6 +58,25 @@
 									</script>
 								</li>
 							</ul>
+							<style media="screen">
+								.menu-widget {
+									position: relative;
+									width: 100%;
+									height: 100%;
+									display: none;
+								}
+								.menu-widget i {
+									position: absolute;
+									right: 0px;
+									font-size: 20px;
+    							top: 5px;
+									cursor: pointer;
+								}
+							</style>
+							<div class="menu-widget">
+								<i class="fas fa-bars fa-2x"></i>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -66,34 +85,57 @@
 	</div>
 	<div class="page-1">
 		<div class='centered'>
-			<div class='container-fluid section-1' id='hello'>
-				<div class='row'>
-					<div class='col-md-6'>
-						<h1 class='fw-100 intro-text'>I am Jake Nelson</h1>
-						<p class='description'>Full Stack Web Developer, Musician and Photographer from the United Kingdom</p>
-						<table class='social-links'>
-							<tr>
-								<td>PHONE</td>
-								<td>+44 7400 347852</td>
-							</tr>
-							<tr>
-								<td>EMAIL</td>
-								<td>Couldbejake@gmail.com</td>
-							</tr>
-							<tr>
-								<td>FROM</td>
-								<td>Surrey, United Kingdom</td>
-							</tr>
-						</table>
-						<div class="d-flex social-btns">
-							<a href='https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing' class='download-cv-btn zoom-hover'><div>Download CV</div></a>
-							<div class="contact-btn zoom-hover">Contact Me</div>
-						</div>
 
+			<style media="screen">
+				.full-screen-container {
+					height: 100vh;
+					width: 100%;
+					position: relative;
+				}
+
+				#hello {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			</style>
+
+			<div class="full-screen-container">
+				<div class='container-fluid section-1' id='hello'>
+					<div class='row'>
+						<div class='col-md-6'>
+							<h1 class='fw-100 intro-text'>I am Jake Nelson</h1>
+							<p class='description'>Full Stack Web Developer, Musician and Photographer from the United Kingdom</p>
+							<table class='social-links'>
+								<tr>
+									<td>PHONE</td>
+									<td>+44 7400 347852</td>
+								</tr>
+								<tr>
+									<td>EMAIL</td>
+									<td>Couldbejake@gmail.com</td>
+								</tr>
+								<tr>
+									<td>FROM</td>
+									<td>Surrey, United Kingdom</td>
+								</tr>
+							</table>
+							<div class="d-flex social-btns">
+								<a href='https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing' class='download-cv-btn zoom-hover'><div>Download CV</div></a>
+								<div class="contact-btn zoom-hover">Contact Me</div>
+							</div>
+
+						</div>
+						<div class='col-md-6'><img class='w-100 profile-icon zoom-hover' src="./assets/jake-nelson.png"></div>
 					</div>
-					<div class='col-md-6 d-sm-none d-md-block d-none d-sm-block'><img class='w-100 profile-icon zoom-hover' src="./assets/jake-nelson.png"></div>
 				</div>
 			</div>
+
+
+
+
+
 			<div class="container-fluid section-2" id='skills'>
 				<h1 class='fw-100 section-title'>Skills</h1>
 				<div class="row">

@@ -1,4 +1,4 @@
-@media (max-width:480px)  {
+@media (max-width:768px)  {
 
   .topbar {
      background-color: #1b1b1b !important;
@@ -7,5 +7,17 @@
 
    .section-1 {
      margin-top: -80px !important;
+   }
+   #nav-menu {
+     display: none;
+   }
+   .intro-text {
+     font-size: 35px !important;
+   }
+   .menu-widget {
+     display: block !important;
+   }
+   .profile-icon {
+     display: none !important;
    }
 }
