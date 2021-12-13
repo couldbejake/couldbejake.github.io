@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Jake Nelson Portfolio</title>
@@ -8,16 +9,17 @@
 	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
 	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link href='./assets/timeline.css' rel='stylesheet'>
 	<link href='./assets/index.css' rel='stylesheet'>
 	<link href='./assets/mobile.css' rel='stylesheet'>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
 	<meta name="description" content="Jake Nelson - Web Developer Portfolio">
 	<meta name="keywords" content="Software Developer, Web Developer, Full stack developer, Contract Web Developer, PHP, Javascript, HTML, MySQL">
 	<meta name="author" content="Jake Nelson">
 </head>
+
 <body>
 	<div class="topbar">
 		<div class="topbar-inner centered">
@@ -29,54 +31,66 @@
 					<div class='col-md-9 col-sm-6 col-6' style='position:relative'>
 						<div class="main-menu">
 							<ul class="list-inline" id='nav-menu'>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#hello'>Hello</div></li>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#skills'>Skills</div></li>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#experience'>Experience</div></li>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#education'>Education</div></li>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#projects'>Projects</div></li>
-								<li><div class='nav-btn' href='javascript:void(0)' to-section='#contact'>Contact</div></li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#hello'>Hello</div>
+								</li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#skills'>Skills</div>
+								</li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#experience'>Experience</div>
+								</li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#education'>Education</div>
+								</li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#projects'>Projects</div>
+								</li>
+								<li>
+									<div class='nav-btn' href='javascript:void(0)' to-section='#contact'>Contact</div>
+								</li>
 								<li style="list-style: none; display: inline">
 									<script type="text/javascript">
-                     $(document).ready(function(){
-                         $('#nav-menu').find('.nav-btn').on('click', function(){
-                             var to_section = $(this).attr('to-section')
-                             $([document.documentElement, document.body]).animate({
-                                     scrollTop: $(to_section).offset().top - 200
-                             }, 1000);
-                         })
-												 $('.contact-btn').on('click', function(){
-													 $([document.documentElement, document.body]).animate({
-																	 scrollTop: $('#contact').offset().top - 200
-													 }, 1000);
-												 })
-												 $('a').on('click', function(e){
-													 var url = $(this).attr('href')
-													 e.preventDefault()
-													 window.open(url, '_blank').focus();
-												 })
-                     })
+									$(document).ready(function() {
+										$('#nav-menu').find('.nav-btn').on('click', function() {
+											var to_section = $(this).attr('to-section')
+											$([document.documentElement, document.body]).animate({
+												scrollTop: $(to_section).offset().top - 200
+											}, 1000);
+										})
+										$('.contact-btn').on('click', function() {
+											$([document.documentElement, document.body]).animate({
+												scrollTop: $('#contact').offset().top - 200
+											}, 1000);
+										})
+										$('a').on('click', function(e) {
+											var url = $(this).attr('href')
+											e.preventDefault()
+											window.open(url, '_blank').focus();
+										})
+									})
 									</script>
 								</li>
 							</ul>
 							<style media="screen">
-								.menu-widget {
-									position: relative;
-									width: 100%;
-									height: 100%;
-									display: none;
-								}
-								.menu-widget i {
-									position: absolute;
-									right: 0px;
-									font-size: 20px;
-    							top: 5px;
-									cursor: pointer;
-								}
+							.menu-widget {
+								position: relative;
+								width: 100%;
+								height: 100%;
+								display: none;
+							}
+
+							.menu-widget i {
+								position: absolute;
+								right: 0px;
+								font-size: 20px;
+								top: 5px;
+								cursor: pointer;
+							}
 							</style>
 							<div class="menu-widget">
 								<i class="fas fa-bars fa-2x"></i>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -85,22 +99,20 @@
 	</div>
 	<div class="page-1">
 		<div class='centered'>
-
 			<style media="screen">
-				.full-screen-container {
-					height: 100vh;
-					width: 100%;
-					position: relative;
-				}
+			.full-screen-container {
+				height: 100vh;
+				width: 100%;
+				position: relative;
+			}
 
-				#hello {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-				}
+			#hello {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 			</style>
-
 			<div class="full-screen-container">
 				<div class='container-fluid section-1' id='hello'>
 					<div class='row'>
@@ -122,20 +134,16 @@
 								</tr>
 							</table>
 							<div class="d-flex social-btns">
-								<a href='https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing' class='download-cv-btn zoom-hover'><div>Download CV</div></a>
+								<a href='https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing' class='download-cv-btn zoom-hover'>
+									<div>Download CV</div>
+								</a>
 								<div class="contact-btn zoom-hover">Contact Me</div>
 							</div>
-
 						</div>
 						<div class='col-md-6'><img class='w-100 profile-icon zoom-hover' src="./assets/jake-nelson.png"></div>
 					</div>
 				</div>
 			</div>
-
-
-
-
-
 			<div class="container-fluid section-2" id='skills'>
 				<h1 class='fw-100 section-title'>Skills</h1>
 				<div class="row">
@@ -165,9 +173,9 @@
 							</div>
 						</div>
 						<div class="skill-section">
-							<p class='skill-description'><span>C++</span> <span class='float-right'>60%</span></p>
+							<p class='skill-description'><span>C++</span> <span class='float-right'>35%</span></p>
 							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:60%'></div>
+								<div class="skillbar-percentage" style='width:35%'></div>
 							</div>
 						</div>
 					</div>
@@ -205,10 +213,8 @@
 					</div>
 				</div>
 				<p class='description'>I primarily focus on web development but have experience in numerous other areas. In the last few years I've been asked to work on countless other projects including REST API development using Boost/Beast in C++ and responsive app design using node.js and mongoDB.<br>
-				<br>
-				I have strong communication skills and get along well with just about anyone. I work well in a team environment, and have the patience to help others in their tasks. I'm always happy to learn new technologies and relish the challenge.<br>
-				<br>
-				Although my main focus is website development, I am particularly adept at using C#, Python and Java for projects that require rapid prototyping.</p>
+					<br> I have strong communication skills and get along well with just about anyone. I work well in a team environment, and have the patience to help others in their tasks. I'm always happy to learn new technologies and relish the challenge.<br>
+					<br> Although my main focus is website development, I am particularly adept at using C#, Python and Java for projects that require rapid prototyping.</p>
 			</div>
 			<style media="screen">
 			</style>
@@ -222,10 +228,8 @@
 							<p class='timeline-heading'><span class='fw-300'>Cambridge Quantum Computing</span> / Full Stack Web Developer</p>
 							<p class='timeline-date'>Jan 2020 – Present</p>
 							<p class='timeline-description'>During my time at CQC I developed many applications including IronBridge Messenger, an application using Post Quantum Algorithms for communication between two parties. This required me to learn about Cryptography; including Key Encapsulation, Message Signing and Encryption.<br>
-							<br>
-							I also worked on a few other projects requiring me to create my own API written in C++ using boost/beast, a C++ development library, and prior working on an inhouse API requiring me to code using C#.<br>
-							<br>
-							My role also included managing day-to-day operations of servers hosted via AWS and Azure for two separate clients, and building a C# UI using WPF.</p>
+								<br> I also worked on a few other projects requiring me to create my own API written in C++ using boost/beast, a C++ development library, and prior working on an inhouse API requiring me to code using C#.<br>
+								<br> My role also included managing day-to-day operations of servers hosted via AWS and Azure for two separate clients, and building a C# UI using WPF.</p>
 						</div>
 					</div>
 					<div class="timeline-element d-flex">
@@ -294,17 +298,17 @@
 							</div>
 							<div class="col-md-6">
 								<div class="project-text">
-										<p class="project-title">STORYCHAT</p>
-										<p class="project-description">A programmable interactive fake-messaging app. Ideal for a marketting or advertising campaign.</p>
-										<p class="project-description mb-0">Stack Used:</p>
-										<div class="project-stack">
-											<div class="project-stack-item">HTML5</div>
-											<div class="project-stack-item">CSS3</div>
-											<div class="project-stack-item">Bootstrap</div>
-											<div class="project-stack-item">Javascript</div>
-											<div class="project-stack-item">TypeWriterJS</div>
-										</div>
-										<a href='https://github.com/couldbejake/StoryChat' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+									<p class="project-title">STORYCHAT</p>
+									<p class="project-description">A programmable interactive fake-messaging app. Ideal for a marketting or advertising campaign.</p>
+									<p class="project-description mb-0">Stack Used:</p>
+									<div class="project-stack">
+										<div class="project-stack-item">HTML5</div>
+										<div class="project-stack-item">CSS3</div>
+										<div class="project-stack-item">Bootstrap</div>
+										<div class="project-stack-item">Javascript</div>
+										<div class="project-stack-item">TypeWriterJS</div>
+									</div>
+									<a href='https://github.com/couldbejake/StoryChat' class='social-link'><i class="fab fa-github fa-2x"></i></a>
 								</div>
 							</div>
 						</div>
@@ -316,18 +320,18 @@
 							</div>
 							<div class="col-md-6">
 								<div class="project-text">
-										<p class="project-title">theDoorbellThatCould</p>
-										<p class="project-description">Doorbell image notifications, daily doorbell gallery and configurable randomized notification texts.</p>
-										<p class="project-description mb-0">Stack Used:</p>
-										<div class="project-stack">
-											<div class="project-stack-item">Python</div>
-											<div class="project-stack-item">PHP</div>
-											<div class="project-stack-item">HTML5</div>
-											<div class="project-stack-item">CSS3</div>
-											<div class="project-stack-item">Bootstrap</div>
-											<div class="project-stack-item">Javascript</div>
-										</div>
-										<a href='https://github.com/couldbejake/theDoorbellThatCould' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+									<p class="project-title">theDoorbellThatCould</p>
+									<p class="project-description">Doorbell image notifications, daily doorbell gallery and configurable randomized notification texts.</p>
+									<p class="project-description mb-0">Stack Used:</p>
+									<div class="project-stack">
+										<div class="project-stack-item">Python</div>
+										<div class="project-stack-item">PHP</div>
+										<div class="project-stack-item">HTML5</div>
+										<div class="project-stack-item">CSS3</div>
+										<div class="project-stack-item">Bootstrap</div>
+										<div class="project-stack-item">Javascript</div>
+									</div>
+									<a href='https://github.com/couldbejake/theDoorbellThatCould' class='social-link'><i class="fab fa-github fa-2x"></i></a>
 								</div>
 							</div>
 						</div>
@@ -335,30 +339,30 @@
 				</div>
 			</div>
 		</div>
-		</div>
-		<div class="page-2">
-			<div class='centered'>
-				<div class='container-fluid section-1' id='contact'>
-							<h1 class='fw-100 section-title'>Contact</h1>
-							<br>
-							<table class='social-links'>
-								<tr>
-									<td>PHONE</td>
-									<td>+44 7400 347852</td>
-								</tr>
-								<tr>
-									<td>EMAIL</td>
-									<td>Couldbejake@gmail.com</td>
-								</tr>
-							</table>
-							<div class="links">
-								<a href='https://www.linkedin.com/in/jake-nelson-b59812187/'><i class="fab fa-linkedin zoom-hover"></i></a>
-								<a href='https://github.com/couldbejake'><i class="fab fa-github-square zoom-hover"></i></a>
-								<a href='https://soundcloud.com/leinception'><i class="fab fa-soundcloud zoom-hover"></i></a>
-
-							</div>
+	</div>
+	<div class="page-2">
+		<div class='centered'>
+			<div class='container-fluid section-1' id='contact'>
+				<h1 class='fw-100 section-title'>Contact</h1>
+				<br>
+				<table class='social-links'>
+					<tr>
+						<td>PHONE</td>
+						<td>+44 7400 347852</td>
+					</tr>
+					<tr>
+						<td>EMAIL</td>
+						<td>Couldbejake@gmail.com</td>
+					</tr>
+				</table>
+				<div class="links">
+					<a href='https://www.linkedin.com/in/jake-nelson-b59812187/'><i class="fab fa-linkedin zoom-hover"></i></a>
+					<a href='https://github.com/couldbejake'><i class="fab fa-github-square zoom-hover"></i></a>
+					<a href='https://soundcloud.com/leinception'><i class="fab fa-soundcloud zoom-hover"></i></a>
 				</div>
 			</div>
 		</div>
+	</div>
 </body>
+
 </html>
