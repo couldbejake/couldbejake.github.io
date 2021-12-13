@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-
-<head>
+<html dir="ltr" lang="en"><head>
 	<meta charset="utf-8">
 	<title>Jake Nelson Portfolio</title>
-	<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-	<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
-	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<link href='./assets/timeline.css' rel='stylesheet'>
-	<link href='./assets/index.css' rel='stylesheet'>
-	<link href='./assets/mobile.css' rel='stylesheet'>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="./assets/timeline.css" rel="stylesheet">
+	<link href="./assets/index.css" rel="stylesheet">
+	<link href="./assets/mobile.css" rel="stylesheet">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
 	<meta name="description" content="Jake Nelson - Web Developer Portfolio">
 	<meta name="keywords" content="Software Developer, Web Developer, Full stack developer, Contract Web Developer, PHP, Javascript, HTML, MySQL">
 	<meta name="author" content="Jake Nelson">
@@ -23,53 +20,31 @@
 <body>
 	<div class="topbar">
 		<div class="topbar-inner centered">
-			<div class='container-fluid'>
-				<div class='row'>
-					<div class='col-md-3 col-sm-6 col-6'>
-						<span class='logo'>Jake Nelson</span>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-6">
+						<span class="logo">Jake Nelson</span>
 					</div>
-					<div class='col-md-9 col-sm-6 col-6' style='position:relative'>
+					<div class="col-md-9 col-sm-6 col-6" style="position:relative">
 						<div class="main-menu">
-							<ul class="list-inline" id='nav-menu'>
+							<ul class="list-inline" id="nav-menu">
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#hello'>Hello</div>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#hello">Hello</div>
 								</li>
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#skills'>Skills</div>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#skills">Skills</div>
 								</li>
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#experience'>Experience</div>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#experience">Experience</div>
 								</li>
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#education'>Education</div>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#education">Education</div>
 								</li>
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#projects'>Projects</div>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#projects">Projects</div>
 								</li>
 								<li>
-									<div class='nav-btn' href='javascript:void(0)' to-section='#contact'>Contact</div>
-								</li>
-								<li style="list-style: none; display: inline">
-									<script type="text/javascript">
-									$(document).ready(function() {
-										$('#nav-menu').find('.nav-btn').on('click', function() {
-											var to_section = $(this).attr('to-section')
-											$([document.documentElement, document.body]).animate({
-												scrollTop: $(to_section).offset().top - 200
-											}, 1000);
-										})
-										$('.contact-btn').on('click', function() {
-											$([document.documentElement, document.body]).animate({
-												scrollTop: $('#contact').offset().top - 200
-											}, 1000);
-										})
-										$('a').on('click', function(e) {
-											var url = $(this).attr('href')
-											e.preventDefault()
-											window.open(url, '_blank').focus();
-										})
-									})
-									</script>
+									<div class="nav-btn" href="javascript:void(0)" to-section="#contact">Contact</div>
 								</li>
 							</ul>
 							<style media="screen">
@@ -98,7 +73,7 @@
 		</div>
 	</div>
 	<div class="page-1">
-		<div class='centered'>
+		<div class="centered">
 			<style media="screen">
 			.full-screen-container {
 				height: 100vh;
@@ -114,13 +89,13 @@
 			}
 			</style>
 			<div class="full-screen-container">
-				<div class='container-fluid section-1' id='hello'>
-					<div class='row'>
-						<div class='col-md-6'>
-							<h1 class='fw-100 intro-text'>I am Jake Nelson</h1>
-							<p class='description'>Full Stack Web Developer, Musician and Photographer from the United Kingdom</p>
-							<table class='social-links'>
-								<tr>
+				<div class="container-fluid section-1" id="hello">
+					<div class="row">
+						<div class="col-md-6">
+							<h1 class="fw-100 intro-text">I am Jake Nelson</h1>
+							<p class="description">Full Stack Web Developer, Musician and Photographer from the United Kingdom</p>
+							<table class="social-links">
+								<tbody><tr>
 									<td>PHONE</td>
 									<td>+44 7400 347852</td>
 								</tr>
@@ -132,102 +107,168 @@
 									<td>FROM</td>
 									<td>Surrey, United Kingdom</td>
 								</tr>
-							</table>
+							</tbody></table>
 							<div class="d-flex social-btns">
-								<a href='https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing' class='download-cv-btn zoom-hover'>
+								<a href="https://docs.google.com/document/d/1HVzWWB0fU48bXo4BmfwEEkk5Xu4pBK_upmw5pMjQ2sc/edit?usp=sharing" class="download-cv-btn zoom-hover">
 									<div>Download CV</div>
 								</a>
 								<div class="contact-btn zoom-hover">Contact Me</div>
 							</div>
 						</div>
-						<div class='col-md-6'><img class='w-100 profile-icon zoom-hover' src="./assets/jake-nelson.png"></div>
+						<div class="col-md-6"><img class="w-100 profile-icon zoom-hover" src="./assets/jake-nelson.png"></div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid section-2" id='skills'>
-				<h1 class='fw-100 section-title'>Skills</h1>
+			<div class="container-fluid section-2" id="skills">
+				<h1 class="fw-100 section-title">Skills</h1>
 				<div class="row">
-					<div class="col-md-6">
-						<div class="skill-section">
-							<p class='skill-description'><span>HTML 5</span> <span class='float-right'>85%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:85%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>CSS3</span> <span class='float-right'>87%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:87%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>Javascript</span> <span class='float-right'>90%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:90%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>JQuery</span> <span class='float-right'>70%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:70%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>C++</span> <span class='float-right'>35%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:35%'></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="skill-section">
-							<p class='skill-description'><span>Bootstrap 3</span> <span class='float-right'>80%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:80%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>PHP</span> <span class='float-right'>90%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:90%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>Codeigniter</span> <span class='float-right'>87%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:87%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>Adobe Photoshop</span> <span class='float-right'>65%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:65%'></div>
-							</div>
-						</div>
-						<div class="skill-section">
-							<p class='skill-description'><span>Java</span> <span class='float-right'>63%</span></p>
-							<div class="skillbar">
-								<div class="skillbar-percentage" style='width:63%'></div>
-							</div>
-						</div>
-					</div>
+					<div class="col-md-6" id="skill-group-1">
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>HTML5</span> <span class="float-right">85%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:85%;filter: hue-rotate(85deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>CSS3</span> <span class="float-right">85%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:85%;filter: hue-rotate(85deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>SCSS</span> <span class="float-right">50%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:50%;filter: hue-rotate(50deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Javascript</span> <span class="float-right">80%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:80%;filter: hue-rotate(80deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>C++</span> <span class="float-right">35%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:35%;filter: hue-rotate(35deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Postman</span> <span class="float-right">90%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:90%;filter: hue-rotate(90deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>C#</span> <span class="float-right">60%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:60%;filter: hue-rotate(60deg);"></div>
+				 </div>
+			</div></div>
+					<div class="col-md-6" id="skill-group-2">
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Bootstrap 3</span> <span class="float-right">80%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:80%;filter: hue-rotate(80deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>PHP</span> <span class="float-right">90%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:90%;filter: hue-rotate(90deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Codeigniter</span> <span class="float-right">90%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:90%;filter: hue-rotate(90deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Adobe Photoshop</span> <span class="float-right">65%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:65%;filter: hue-rotate(65deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Adobe Illustrator</span> <span class="float-right">25%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:25%;filter: hue-rotate(25deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Logic Pro X</span> <span class="float-right">100%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:100%;filter: hue-rotate(100deg);"></div>
+				 </div>
+			</div>
+			<div class="skill-section">
+				<p class="skill-description">
+					<span>Java</span> <span class="float-right">65%</span>
+				</p>
+				<div class="skillbar">
+					<div class="skillbar-percentage" style="width:65%;filter: hue-rotate(65deg);"></div>
+				 </div>
+			</div></div>
+
 				</div>
-				<p class='description'>I primarily focus on web development but have experience in numerous other areas. In the last few years I've been asked to work on countless other projects including REST API development using Boost/Beast in C++ and responsive app design using node.js and mongoDB.<br>
-					<br> I have strong communication skills and get along well with just about anyone. I work well in a team environment, and have the patience to help others in their tasks. I'm always happy to learn new technologies and relish the challenge.<br>
-					<br> Although my main focus is website development, I am particularly adept at using C#, Python and Java for projects that require rapid prototyping.</p>
+				<p class="description">
+					I am most experienced at using PHP, JavaScript, HTML, CSS, Bootstrap
+					and MySQL to create responsive, high performance applications. I have experience
+					with the frameworks CodeIgniter and FuelPHP, but I'm always happy to learn new technologies,
+					and find challenges exciting.
+
+					<br><br>
+
+					I primarily focus on web development but have experience in numerous
+					other areas including REST API development using Boost/Beast in C++
+					and responsive app design using node.js and mongoDB.
+
+					<br><br>
+
+					I have strong communication skills and get along well with
+					just about anyone. I work well in a team environment, and have the
+					patience to help others in their tasks.<br>
+				</p>
 			</div>
 			<style media="screen">
 			</style>
-			<div class="container-fluid section-2" id='experience'>
-				<h1 class='fw-100 section-title'>Experience</h1>
+			<div class="container-fluid section-2" id="experience">
+				<h1 class="fw-100 section-title">Experience</h1>
 				<div class="timeline">
 					<div class="timeline-line"></div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item">
-							<p class='timeline-heading'><span class='fw-300'>Cambridge Quantum Computing</span> / Full Stack Web Developer</p>
-							<p class='timeline-date'>Jan 2020 – Present</p>
-							<p class='timeline-description'>During my time at CQC I developed many applications including IronBridge Messenger, an application using Post Quantum Algorithms for communication between two parties. This required me to learn about Cryptography; including Key Encapsulation, Message Signing and Encryption.<br>
+							<p class="timeline-heading"><span class="fw-300">Cambridge Quantum Computing</span> / Full Stack Web Developer</p>
+							<p class="timeline-date">Jan 2020 – Present</p>
+							<p class="timeline-description">During my time at CQC I developed many applications including IronBridge Messenger, an application using Post Quantum Algorithms for communication between two parties. This required me to learn about Cryptography; including Key Encapsulation, Message Signing and Encryption.<br>
 								<br> I also worked on a few other projects requiring me to create my own API written in C++ using boost/beast, a C++ development library, and prior working on an inhouse API requiring me to code using C#.<br>
 								<br> My role also included managing day-to-day operations of servers hosted via AWS and Azure for two separate clients, and building a C# UI using WPF.</p>
 						</div>
@@ -235,66 +276,66 @@
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item">
-							<p class='timeline-heading'><span class='fw-300'>Evident Software</span> / Front-End Web Developer</p>
-							<p class='timeline-date'>Mar 2019 – Dec 2019</p>
-							<p class='timeline-description'>During 2019 I worked at Evident Software based in Croydon. Over that period my role expanded to building database models and designing a restful API for mobile developers to utilise. I encountered many interesting projects based around responsive web design and built projects ranging from graphing applications to a job routing application; to aid in Asset Tracking.</p>
+							<p class="timeline-heading"><span class="fw-300">Evident Software</span> / Front-End Web Developer</p>
+							<p class="timeline-date">Mar 2019 – Dec 2019</p>
+							<p class="timeline-description">During 2019 I worked at Evident Software based in Croydon. Over that period my role expanded to building database models and designing a restful API for mobile developers to utilise. I encountered many interesting projects based around responsive web design and built projects ranging from graphing applications to a job routing application; to aid in Asset Tracking.</p>
 						</div>
 					</div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item mb-0">
-							<p class='timeline-heading'><span class='fw-300'>Freelancer</span> / Freelance Web Developer</p>
-							<p class='timeline-date'>2016 - 2018</p>
-							<p class='timeline-description'>Whilst studying, I worked on a number of freelance projects for people around the globe via freelancer, including an art website named crearts.</p>
+							<p class="timeline-heading"><span class="fw-300">Freelancer</span> / Freelance Web Developer</p>
+							<p class="timeline-date">2016 - 2018</p>
+							<p class="timeline-description">Whilst studying, I worked on a number of freelance projects for people around the globe via freelancer, including an art website named crearts.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid section-2" id='education'>
-				<h1 class='fw-100 section-title'>Education</h1>
+			<div class="container-fluid section-2" id="education">
+				<h1 class="fw-100 section-title">Education</h1>
 				<div class="timeline">
 					<div class="timeline-line"></div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item">
-							<p class='timeline-heading'><span class='fw-300'>Hull University</span> / Computer Science and AI (Year 1)</p>
-							<p class='timeline-date'>2017 - 2018</p>
-							<p class='timeline-description'>After successfully completing the first year at Hull University, I decided to take a year out to experience work in the field.</p>
+							<p class="timeline-heading"><span class="fw-300">Hull University</span> / Computer Science and AI (Year 1)</p>
+							<p class="timeline-date">2017 - 2018</p>
+							<p class="timeline-description">After successfully completing the first year at Hull University, I decided to take a year out to experience work in the field.</p>
 						</div>
 					</div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item">
-							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / A2</p>
-							<p class='timeline-date'>2017</p>
-							<p class='timeline-description'>Computer Science (C), Music Technology (B).</p>
+							<p class="timeline-heading"><span class="fw-300">Halliford School</span> / A2</p>
+							<p class="timeline-date">2017</p>
+							<p class="timeline-description">Computer Science (C), Music Technology (B).</p>
 						</div>
 					</div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item">
-							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / AS</p>
-							<p class='timeline-date'>2016</p>
-							<p class='timeline-description'>EPQ (B), Maths, Physics</p>
+							<p class="timeline-heading"><span class="fw-300">Halliford School</span> / AS</p>
+							<p class="timeline-date">2016</p>
+							<p class="timeline-description">EPQ (B), Maths, Physics</p>
 						</div>
 					</div>
 					<div class="timeline-element d-flex">
 						<div class="timeline-circle"></div>
 						<div class="timeline-item mb-0">
-							<p class='timeline-heading'><span class='fw-300'>Halliford School</span> / GCSEs</p>
-							<p class='timeline-date'>2015</p>
-							<p class='timeline-description'>Computer Science (A*) , English Language (A), English Literature (A), Maths (A), Physics (B), Chemistry (C), Biology (C), Geography (C), Music.</p>
+							<p class="timeline-heading"><span class="fw-300">Halliford School</span> / GCSEs</p>
+							<p class="timeline-date">2015</p>
+							<p class="timeline-description">Computer Science (A*) , English Language (A), English Literature (A), Maths (A), Physics (B), Chemistry (C), Biology (C), Geography (C), Music.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid section-2" id='projects'>
-				<h1 class='fw-100 section-title'>Projects</h1>
+			<div class="container-fluid section-2" id="projects">
+				<h1 class="fw-100 section-title">Projects</h1>
 				<div class="projects">
 					<div class="container project-card">
 						<div class="row">
 							<div class="col-md-6 project-card-info">
-								<img src="./assets/projects/storychat.png" alt="" class='w-100 zoom-hover'>
+								<img src="./assets/projects/storychat.png" alt="" class="w-100 zoom-hover">
 							</div>
 							<div class="col-md-6">
 								<div class="project-text">
@@ -308,7 +349,8 @@
 										<div class="project-stack-item">Javascript</div>
 										<div class="project-stack-item">TypeWriterJS</div>
 									</div>
-									<a href='https://github.com/couldbejake/StoryChat' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+									<a href="https://github.com/couldbejake/StoryChat" class="social-link"><i class="fas fa-code fa-2x"></i></a>
+									<a href="https://couldbejake.github.io/StoryChat/" class="social-link"><i class="fas fa-link fa-2x"></i></a>
 								</div>
 							</div>
 						</div>
@@ -316,7 +358,7 @@
 					<div class="container project-card">
 						<div class="row">
 							<div class="col-md-6 project-card-info">
-								<img src="./assets/projects/thedoorbellthatcould.png" alt="" class='w-100 zoom-hover'>
+								<img src="./assets/projects/thedoorbellthatcould.png" alt="" class="w-100 zoom-hover">
 							</div>
 							<div class="col-md-6">
 								<div class="project-text">
@@ -331,7 +373,51 @@
 										<div class="project-stack-item">Bootstrap</div>
 										<div class="project-stack-item">Javascript</div>
 									</div>
-									<a href='https://github.com/couldbejake/theDoorbellThatCould' class='social-link'><i class="fab fa-github fa-2x"></i></a>
+									<a href="https://github.com/couldbejake/theDoorbellThatCould" class="social-link"><i class="fas fa-code fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container project-card">
+						<div class="row">
+							<div class="col-md-6 project-card-info">
+								<img src="./assets/projects/class2.png" alt="" class="w-100 zoom-hover">
+							</div>
+							<div class="col-md-6">
+								<div class="project-text">
+									<p class="project-title">Class2</p>
+									<p class="project-description">A multi-threaded, user-agent ware python scraper for Twitter written in node.js using Twitter's private API.</p>
+									<p class="project-description mb-0">Stack Used:</p>
+									<div class="project-stack">
+										<div class="project-stack-item">HTML5</div>
+										<div class="project-stack-item">CSS3</div>
+										<div class="project-stack-item">Javascript</div>
+										<div class="project-stack-item">NLP</div>
+									</div>
+									<a href="https://github.com/couldbejake/Class2" class="social-link"><i class="fas fa-code fa-2x"></i></a>
+									<a href="https://couldbejake.github.io/Class2" class="social-link"><i class="fas fa-link fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container project-card">
+						<div class="row">
+							<div class="col-md-6 project-card-info">
+								<img src="./assets/projects/twitter.png" alt="" class="w-100 zoom-hover">
+							</div>
+							<div class="col-md-6">
+								<div class="project-text">
+									<p class="project-title">Tweetium</p>
+									<p class="project-description">A multi-threaded, user-agent ware python scraper for Twitter written in node.js using Twitter's private API.</p>
+									<p class="project-description mb-0">Stack Used:</p>
+									<div class="project-stack">
+										<div class="project-stack-item">Node.js</div>
+										<div class="project-stack-item">Python</div>
+										<div class="project-stack-item">Postman</div>
+										<div class="project-stack-item">Multithreading</div>
+									</div>
+									<a href="https://github.com/couldbejake/Tweetium" class="social-link"><i class="fas fa-code fa-2x"></i></a>
+									<a href="https://www.youtube.com/watch?v=6S2vm31HEakt" class="social-link"><i class="fas fa-link fa-2x"></i></a>
 								</div>
 							</div>
 						</div>
@@ -341,12 +427,12 @@
 		</div>
 	</div>
 	<div class="page-2">
-		<div class='centered'>
-			<div class='container-fluid section-1' id='contact'>
-				<h1 class='fw-100 section-title'>Contact</h1>
+		<div class="centered">
+			<div class="container-fluid section-1" id="contact">
+				<h1 class="fw-100 section-title">Contact</h1>
 				<br>
-				<table class='social-links'>
-					<tr>
+				<table class="social-links">
+					<tbody><tr>
 						<td>PHONE</td>
 						<td>+44 7400 347852</td>
 					</tr>
@@ -354,15 +440,95 @@
 						<td>EMAIL</td>
 						<td>Couldbejake@gmail.com</td>
 					</tr>
-				</table>
+				</tbody></table>
 				<div class="links">
-					<a href='https://www.linkedin.com/in/jake-nelson-b59812187/'><i class="fab fa-linkedin zoom-hover"></i></a>
-					<a href='https://github.com/couldbejake'><i class="fab fa-github-square zoom-hover"></i></a>
-					<a href='https://soundcloud.com/leinception'><i class="fab fa-soundcloud zoom-hover"></i></a>
+					<a href="https://www.linkedin.com/in/jake-nelson-b59812187/"><i class="fab fa-linkedin zoom-hover"></i></a>
+					<a href="https://github.com/couldbejake"><i class="fas fa-code-square zoom-hover"></i></a>
+					<a href="https://soundcloud.com/leinception"><i class="fab fa-soundcloud zoom-hover"></i></a>
+					<a href="https://www.youtube.com/channel/UCt3zwlX0OfVjsUI-2TnKNnw"><i class="fab fa-youtube zoom-hover"></i></a>
+					<a href="https://open.spotify.com/user/4hbbappwp01za39j212ftxqbg"><i class="fab fa-spotify zoom-hover"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-</body>
 
-</html>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#nav-menu').find('.nav-btn').on('click', function() {
+		var to_section = $(this).attr('to-section')
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(to_section).offset().top - 200
+		}, 1000);
+	})
+	$('.contact-btn').on('click', function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $('#contact').offset().top - 200
+		}, 1000);
+	})
+	$('a').on('click', function(e) {
+		var url = $(this).attr('href')
+		e.preventDefault()
+		window.open(url, '_blank').focus();
+	})
+})
+</script>
+<script type="text/javascript">
+	bar_data1 = [
+		{name: 'HTML5', amount: 85},
+		{name: 'CSS3', amount: 85},
+		{name: 'SCSS', amount: 50},
+		{name: 'Javascript', amount: 80},
+		{name: 'C++', amount: 35},
+		{name: 'Postman', amount: 90},
+		{name: 'C#', amount: 60},
+	]
+
+	bar_data2 = [
+		{name: 'Bootstrap 3', amount: 80},
+		{name: 'PHP', amount: 90},
+		{name: 'Codeigniter', amount: 90},
+		{name: 'Adobe Photoshop', amount: 65},
+		{name: 'Adobe Illustrator', amount: 25},
+		{name: 'Logic Pro X', amount: 100},
+		{name: 'Java', amount: 65},
+	]
+
+	function createSkillBarGroup(el, data){
+		data.forEach((skill, i) => {
+			var rot_mod = skill.amount
+
+			_html = `
+			<div class='skill-section'>
+				<p class='skill-description'>
+					<span>${skill.name}</span> <span class='float-right'>${skill.amount}%</span>
+				</p>
+				<div class='skillbar'>
+					<div class='skillbar-percentage' style='width:${skill.amount}%;filter: hue-rotate(${rot_mod}deg);'></div>
+				 </div>
+			</div>`
+			$(el).append(_html)
+		});
+
+	}
+
+	createSkillBarGroup($('#skill-group-1'), bar_data1)
+	createSkillBarGroup($('#skill-group-2'), bar_data2)
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FJH8CYBLQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3FJH8CYBLQ');
+</script>
+<!--
+TODO:
+	- Use Babel to transpile to allow for ES6 on older browsers ie. Internet Explorer 11
+	- Use a framework, although I prefer native Javascript + CSS.
+-->
+</body></html>
