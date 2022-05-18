@@ -7,6 +7,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<link href="./assets/timeline.css" rel="stylesheet">
 	<link href="./assets/index.css" rel="stylesheet">
 	<link href="./assets/mobile.css" rel="stylesheet">
@@ -16,8 +17,8 @@
 	<meta name="keywords" content="Software Developer, Web Developer, Full stack developer, Contract Web Developer, PHP, Javascript, HTML, MySQL">
 	<meta name="author" content="Jake Nelson">
 </head>
-
 <body>
+	<div id="particles-js-container"><div id='particles-js'></div></div>
 	<div class="topbar">
 		<div class="topbar-inner centered">
 			<div class="container-fluid">
@@ -47,22 +48,6 @@
 									<div class="nav-btn" href="javascript:void(0)" to-section="#contact">Contact</div>
 								</li>
 							</ul>
-							<style media="screen">
-							.menu-widget {
-								position: relative;
-								width: 100%;
-								height: 100%;
-								display: none;
-							}
-
-							.menu-widget i {
-								position: absolute;
-								right: 0px;
-								font-size: 20px;
-								top: 5px;
-								cursor: pointer;
-							}
-							</style>
 							<div class="menu-widget">
 								<i class="fas fa-bars fa-2x"></i>
 							</div>
@@ -74,24 +59,10 @@
 	</div>
 	<div class="page-1">
 		<div class="centered">
-			<style media="screen">
-			.full-screen-container {
-				height: 100vh;
-				width: 100%;
-				position: relative;
-			}
-
-			#hello {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			</style>
 			<div class="full-screen-container">
 				<div class="container-fluid section-1" id="hello">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-7">
 							<h1 class="fw-100 intro-text">I am Jake Nelson</h1>
 							<p class="description">Full Stack Web Developer, Musician and Photographer from the United Kingdom</p>
 							<table class="social-links">
@@ -115,7 +86,7 @@
 								<div class="contact-btn zoom-hover">Contact Me</div>
 							</div>
 						</div>
-						<div class="col-md-6"><img class="w-100 profile-icon zoom-hover" src="./assets/jake-nelson.png"></div>
+						<div class="col-md-5"><img class="w-100 profile-icon zoom-hover" src="./assets/jake-nelson.png"></div>
 					</div>
 				</div>
 			</div>
@@ -340,13 +311,6 @@
 		</div>
 	</div>
 
-<style media="screen">
-
-	.links a {
-		margin-right: 10px;
-	}
-</style>
-
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -390,6 +354,7 @@ $(document).ready(function() {
 	]
 
 	function createSkillBarGroup(el, data){
+
 		data.forEach((skill, i) => {
 			var rot_mod = skill.amount
 
@@ -402,23 +367,21 @@ $(document).ready(function() {
 					<div class='skillbar-percentage' style='width:${skill.amount}%;filter: hue-rotate(${rot_mod}deg);'></div>
 				 </div>
 			</div>`
-			$(el).append(_html)
-		});
 
+			$(el).append(_html)
+
+		});
 	}
 
 	createSkillBarGroup($('#skill-group-1'), bar_data1)
 	createSkillBarGroup($('#skill-group-2'), bar_data2)
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FJH8CYBLQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3FJH8CYBLQ');
+	var particles_config = { "particles": { "number": { "value": 47, "density": { "enable": true, "value_area": 868.0624057955 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 4 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 160.3412060865523, "color": "#ffffff", "opacity": 0.3447335930860874, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "top", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 2725.8005034713888, "rotateY": 1200 } } }, "interactivity": { "detect_on": "window", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": false, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }
+
+	particlesJS("particles-js", particles_config);
+
 </script>
+
 <!--
 TODO:
 	- Use Babel to transpile to allow for ES6 on older browsers ie. Internet Explorer 11

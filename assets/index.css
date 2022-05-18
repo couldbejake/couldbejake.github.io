@@ -1,133 +1,117 @@
 html, body {
-  font-family: 'Roboto', sans-serif;
-      background: #1b1b1b;
-      color: white;
+     font-family: 'Roboto', sans-serif;
+     background: #1b1b1b;
+     color: white;
+     position: relative;
 }
-.list-inline li div {
-  cursor: pointer;
-  font-weight: 100;
-      line-height: 38px;
+ .list-inline li div {
+     cursor: pointer;
+     font-weight: 100;
+     line-height: 38px;
 }
-.list-inline li div:hover {
-  text-decoration: underline;
+ .list-inline li div:hover {
+     text-decoration: underline;
 }
-
-.download-cv-btn {
-  color: black;
+ .download-cv-btn {
+     color: black;
 }
-.download-cv-btn:hover {
-  color: black;
-  text-decoration: none;
+ .download-cv-btn:hover {
+     color: black;
+     text-decoration: none;
 }
-
-
-   .centered {
+ .centered {
      max-width:1000px;
      margin: 0 auto;
      padding: 10px;
-   }
-   .list-inline {
+}
+ .list-inline {
      text-align: right;
      margin-bottom: 0px;
-   }
-   .list-inline>li {
+}
+ .list-inline>li {
      display: inline-block;
      padding-left: 5px;
      padding-right: 5px;
-   }
-
-   /* if backdrop support: very transparent and blurred */
-   @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+}
+/* if backdrop support: very transparent and blurred */
+/*  @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) { */
+ @supports ((backdrop-filter: blur(2em))) {
      .topbar {
-       background-color: rgba(0, 0, 0, 0.4) !important;
-       backdrop-filter: blur(5px) !important;
-     }
-   }
-
-   .topbar {
-     position: fixed;
-     width: 100%;
-     background-color: #1b1b1b;
-     z-index: 99;
-     padding-top: 15px;
-     padding-bottom: 15px;
-     top: 0px;
-     left: 0px;
-     border-bottom: 1px solid #353535;
-   }
-
-   .logo {
+       background-color: rgb(37 37 37 / 40%) !important;
+       backdrop-filter: blur(8px) !important;
+    }
+}
+ .topbar {
+   position: fixed;
+   width: 100%;
+   z-index: 99;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   top: 0px;
+   left: 0px;
+   border-bottom: 1px solid #313131;
+   background-color: #1b1b1b;
+}
+ .logo {
      font-size: 25px;
      font-weight: 300;
      color: white;
-   }
-   .main-menu > ul > li > a {
+}
+ .main-menu > ul > li > a {
      color: white;
      line-height: 37px;
-   }
-
-   .page-1 {
+}
+ .page-1 {
      padding-bottom: 50px;
-   }
-   .page-2 {
+}
+ .page-2 {
      padding-top: 30px;
      padding-bottom: 30px;
-   }
-   .social-links > tbody > tr > td:first-child {
+}
+ .social-links > tbody > tr > td:first-child {
      width: 100px;
      font-weight: 300;
-   }
-
-   .social-links > tbody > tr > td:nth-child(2) {
+}
+ .social-links > tbody > tr > td:nth-child(2) {
      color: white;
      font-weight: 300;
-   }
-
-   .social-buttons {
+}
+ .social-buttons {
      margin-top: 30px;
      margin-bottom: 30px;
-   }
-
-   .social-buttons > button:first-child {
+}
+ .social-buttons > button:first-child {
      margin-right: 15px;
-   }
-
-   .social-buttons > button:nth-child(2) {
+}
+ .social-buttons > button:nth-child(2) {
      margin-left: 15px;
-   }
-
-   .social-buttons > button {
+}
+ .social-buttons > button {
      padding: 10px;
-   }
-
-   .social-links > tbody > tr > td {
+}
+ .social-links > tbody > tr > td {
      padding-top: 4px;
      padding-bottom: 4px;
-   }
-
-   .description {
+}
+ .description {
      font-weight: 100;
      font-size: 20px;
      padding-top: 15px;
      padding-bottom: 15px;
-   }
-
-   .fw-100 {
+}
+ .fw-100 {
      font-weight: 100;
      color: white;
-   }
-
-   .fw-200 {
+}
+ .fw-200 {
      font-weight: 200;
      color: white;
-   }
-
-   .fw-300 {
+}
+ .fw-300 {
      font-weight: 300;
      color: white;
-   }
-
-   .intro-text {
+}
+ .intro-text {
      background: -webkit-linear-gradient(left, #00f298, #07f7f7);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -135,9 +119,8 @@ html, body {
      font-size: 52px;
      font-weight: 700;
      text-transform: uppercase;
-   }
-
-   .section-title {
+}
+ .section-title {
      background: -webkit-linear-gradient(left, #00f298, #07f7f7);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -146,162 +129,191 @@ html, body {
      font-weight: 700;
      text-transform: uppercase;
      margin-bottom: 30px;
-   }
-
-   .profile-icon {
+}
+ .profile-icon {
      border-radius: 4px;
-   }
+}
+ .zoom-hover {
+     transition: 0.3s;
+}
+ .zoom-hover:hover {
+     transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+ .saturate-hover {
+     transition: 0.3s;
+}
+ .saturate-hover:hover {
+     filter: saturate(0.5);
+}
+ .section-1 {
+     padding-top: 15px;
+     padding-bottom: 60px;
+}
+ .section-2 {
+     margin-top: 60px;
+     padding-bottom: 60px;
+}
+ .section-3 {
+     margin-top: 60px;
+     padding-bottom: 60px;
+}
+ .float-right {
+     float: right
+}
+ .skillbar {
+     width: 100%;
+     height: 5px;
+     background-color: #343434;
+     border-radius: 2px;
+     position: relative;
+}
+ .skillbar-percentage {
+     background-color: #03f5c8;
+     background-image: linear-gradient(to right, #00f298, #07f7f7);
+     height: 100%;
+     width: 100%;
+     border-radius: 2px;
+}
+ .skill-description {
+     margin-bottom: 0px;
+     font-weight: 100;
+}
+ .skillbar {
+     margin-bottom: 15px;
+}
+ .social-btns {
+     margin-top: 30px;
+}
+ .download-cv-btn {
+     background-color: #03f5c8;
+     background-image: linear-gradient(to right, #00f298, #07f7f7);
+     padding: 10px;
+     border-radius: 50px;
+     color: black;
+     width: 50%;
+     text-align: center;
+     margin-right: 15px;
+     cursor: pointer;
+}
+ .contact-btn {
+     background-color: rgb(50, 50, 50);
+     color: white;
+     padding: 10px;
+     border-radius: 50px;
+     width: 50%;
+     text-align: center;
+     margin-left: 15px;
+     cursor: pointer;
+}
+ .page-2 {
+     width: 100%;
+}
+ .download-cv-btn {
+     background-color: #03f5c8;
+     background-image: linear-gradient(to right, #00f298, #07f7f7);
+     padding: 10px;
+     border-radius: 50px;
+     color: black;
+     width: 50%;
+     text-align: center;
+     margin-right: 15px;
+     cursor: pointer;
+}
+ .contact-btn {
+     background-color: rgb(50, 50, 50);
+     color: white;
+     padding: 10px;
+     border-radius: 50px;
+     width: 50%;
+     text-align: center;
+     margin-left: 15px;
+     cursor: pointer;
+}
+ .project-card {
+     border: 1px solid rgb(50, 50, 50);
+     margin-bottom: 30px;
+}
+ .project-card-info {
+     padding-left: 0px;
+     padding-right: 0px;
+}
+ .project-text {
+     padding: 30px;
+}
+ .project-title {
+     font-size: 24px;
+     font-weight: 300;
+     margin-bottom: 5px;
+}
+ .project-description {
+     font-weight: 100;
+}
+ .project-stack .project-stack-item {
+     display: inline-block;
+     font-weight: 100;
+     border: 1px solid rgb(50, 50, 50);
+     padding: 5px;
+     margin-top: 10px;
+}
+ .social-link {
+     color: white;
+}
+ .social-link i {
+     color: white;
+     margin-top: 15px;
+}
+ .links {
+     margin-top: 30px;
+}
+ .links a i {
+     color: white;
+     font-size: 35px;
+}
+ .links a i:hover {
+     color: rgb(150, 150, 150);
+}
 
-   .zoom-hover {
-       transition: 0.3s;
-   }
+.full-screen-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
 
-   .zoom-hover:hover {
-     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
+#hello {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    .saturate-hover {
-      transition: 0.3s;
-    }
+.links a {
+  margin-right: 10px;
+}
 
-    .saturate-hover:hover {
-          filter: saturate(0.5);
-    }
+.menu-widget {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 
-     .section-1 {
-       padding-top: 15px;
-       padding-bottom: 60px;
-     }
-     .section-2 {
-       margin-top: 60px;
-       padding-bottom: 60px;
-     }
+.menu-widget i {
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  top: 5px;
+  cursor: pointer;
+}
 
-     .section-3 {
-       margin-top: 60px;
-       padding-bottom: 60px;
-     }
+#particles-js-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 
-     .float-right {
-       float: right
-     }
-     .skillbar {
-       width: 100%;
-       height: 5px;
-       background-color: #343434;
-       border-radius: 2px;
-       position: relative;
-     }
-     .skillbar-percentage {
-       background-color: #03f5c8;
-       background-image: linear-gradient(to right, #00f298, #07f7f7);
-       height: 100%;
-       width: 100%;
-       border-radius: 2px;
-     }
-     .skill-description {
-       margin-bottom: 0px;
-       font-weight: 100;
-     }
-     .skillbar {
-       margin-bottom: 15px;
-     }
-
-     .social-btns {
-       margin-top: 30px;
-     }
-       .download-cv-btn {
-         background-color: #03f5c8;
-         background-image: linear-gradient(to right, #00f298, #07f7f7);
-         padding: 10px;
-         border-radius: 50px;
-         color: black;
-         width: 50%;
-         text-align: center;
-         margin-right: 15px;
-         cursor: pointer;
-       }
-       .contact-btn {
-         background-color: rgb(50, 50, 50);
-         color: white;
-         padding: 10px;
-         border-radius: 50px;
-         width: 50%;
-         text-align: center;
-         margin-left: 15px;
-         cursor: pointer;
-       }
-
-       .page-2 {
- 				background-color: rgb(50m);
- 				height: 100%;
- 				width: 100%;
- 			}
-
- 			.download-cv-btn {
- 				background-color: #03f5c8;
- 				background-image: linear-gradient(to right, #00f298, #07f7f7);
- 				padding: 10px;
- 				border-radius: 50px;
- 				color: black;
- 				width: 50%;
- 				text-align: center;
- 				margin-right: 15px;
- 				cursor: pointer;
- 			}
- 			.contact-btn {
- 				background-color: rgb(50, 50, 50);
- 				color: white;
- 				padding: 10px;
- 				border-radius: 50px;
- 				width: 50%;
- 				text-align: center;
- 				margin-left: 15px;
- 				cursor: pointer;
- 			}
-
- 			.project-card {
- 			 border: 1px solid rgb(50, 50, 50);
- 			 margin-bottom: 30px;
- 		 }
- 			 .project-card-info {
- 				 padding-left: 0px;
- 				 padding-right: 0px;
- 			 }
- 			 .project-text {
- 				 padding: 30px;
- 			 }
- 			 .project-title {
- 				 font-size: 24px;
- 				 font-weight: 300;
- 				 margin-bottom: 5px;
- 			 }
- 			 .project-description {
- 				 font-weight: 100;
- 			 }
- 			 .project-stack .project-stack-item {
- 				 display: inline-block;
- 				 font-weight: 100;
- 				 border: 1px solid rgb(50, 50, 50);
- 				 padding: 5px;
- 				 margin-top: 10px;
- 			 }
- 			 .social-link {
- 				 color: white;
- 			 }
- 			 .social-link i {
- 				 color: white;
-
- 				 margin-top: 15px;
- 			 }
-
-       .links {
-         margin-top: 30px;
-       }
-       .links a i {
-         color: white;
-         font-size: 35px;
-       }
-       .links a i:hover {
-         color: rgb(150, 150, 150);
-       }
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
