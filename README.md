@@ -1,4 +1,4 @@
 # couldbejake.github.io
 My personal website
 
-[Link](couldbejake.github.io)
+[Link](https://couldbejake.github.io)
