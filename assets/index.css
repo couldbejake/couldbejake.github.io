@@ -237,6 +237,7 @@ html, body {
  .project-card {
      border: 1px solid rgb(50, 50, 50);
      margin-bottom: 30px;
+     backdrop-filter: blur(3px);
 }
  .project-card-info {
      padding-left: 0px;
