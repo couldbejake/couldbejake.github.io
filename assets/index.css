@@ -49,7 +49,7 @@ html, body {
    padding-bottom: 15px;
    top: 0px;
    left: 0px;
-   border-bottom: 1px solid #313131;
+   /* border-bottom: 1px solid #313131; */
    background-color: #1b1b1b;
 }
  .logo {
@@ -237,11 +237,14 @@ html, body {
  .project-card {
      border: 1px solid rgb(50, 50, 50);
      margin-bottom: 30px;
-     backdrop-filter: blur(3px);
+     border-radius: 4px;
 }
  .project-card-info {
      padding-left: 0px;
      padding-right: 0px;
+}
+.project-card-info img {
+     border-radius: 2px;
 }
  .project-text {
      padding: 30px;
