@@ -1,10 +1,15 @@
 html, body {
      font-family: 'Roboto', sans-serif;
-     background: #1b1b1b;
      color: white;
      position: relative;
+     background-color: rgb(38 38 38);
 }
- .list-inline li div {
+
+body {
+         background: linear-gradient(143deg, rgb(38 38 38) 0%, rgb(14 14 14) 100%);
+}
+
+.list-inline li div {
      cursor: pointer;
      font-weight: 100;
      line-height: 38px;
@@ -36,8 +41,10 @@ html, body {
 /*  @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) { */
  @supports ((backdrop-filter: blur(2em))) {
      .topbar {
-       background-color: rgb(37 37 37 / 40%) !important;
-       backdrop-filter: blur(8px) !important;
+         background-color: rgb(37 37 37 / 40%) !important;
+         backdrop-filter: blur(9.2px) saturate(1.8) !important;
+         box-shadow: shad;
+         box-shadow: 5px 2px 5px #00000036;
     }
 }
  .topbar {
@@ -135,6 +142,7 @@ html, body {
 }
  .profile-icon {
      border-radius: 4px;
+     max-width: 330px;
 }
  .zoom-hover {
      transition: 0.3s;
