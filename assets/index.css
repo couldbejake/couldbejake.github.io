@@ -1,12 +1,11 @@
+html {
+ background: linear-gradient(143deg, rgb(38 38 38) 0%, rgb(14 14 14) 100%);    
+}
+
 html, body {
      font-family: 'Roboto', sans-serif;
      color: white;
      position: relative;
-     background-color: rgb(38 38 38);
-}
-
-body {
-         background: linear-gradient(143deg, rgb(38 38 38) 0%, rgb(14 14 14) 100%);
 }
 
 .list-inline li div {
@@ -44,7 +43,7 @@ body {
          background-color: rgb(37 37 37 / 40%) !important;
          backdrop-filter: blur(9.2px) saturate(1.8) !important;
          box-shadow: shad;
-         box-shadow: 5px 2px 5px #00000036;
+         /* box-shadow: 5px 2px 5px #00000036; */
     }
 }
  .topbar {
