@@ -1,11 +1,20 @@
-html {
- background: linear-gradient(143deg, rgb(38 38 38) 0%, rgb(14 14 14) 100%);    
-}
-
 html, body {
      font-family: 'Roboto', sans-serif;
      color: white;
      position: relative;
+     background-color: rgb(47 47 47);
+}
+
+
+html {
+ background: linear-gradient(143deg, rgb(47 47 47) 0%, rgb(32 32 32) 100%);
+ background-color: rgb(47 47 47);
+}
+
+body {
+    background: linear-gradient(143deg, rgb(47 47 47) 0%, rgb(32 32 32) 100%);
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .list-inline li div {
