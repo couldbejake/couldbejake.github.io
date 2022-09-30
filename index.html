@@ -346,12 +346,12 @@ $(document).ready(function() {
 	$('#nav-menu').find('.nav-btn').on('click', function() {
 		var to_section = $(this).attr('to-section')
 		$([document.documentElement, document.body]).animate({
-			scrollTop: $(to_section).offset().top - 200
+			scrollTop: $(to_section).offset().top - 100
 		}, 1000);
 	})
 	$('.contact-btn').on('click', function() {
 		$([document.documentElement, document.body]).animate({
-			scrollTop: $('#contact').offset().top - 200
+			scrollTop: $('#contact').offset().top - 100
 		}, 1000);
 	})
 	$('a').on('click', function(e) {
