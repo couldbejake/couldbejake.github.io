@@ -165,10 +165,6 @@ body {
  .saturate-hover:hover {
      filter: saturate(0.5);
 }
- .section-1 {
-     padding-top: 15px;
-     padding-bottom: 60px;
-}
  .section-2 {
      margin-top: 60px;
      padding-bottom: 60px;
