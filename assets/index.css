@@ -152,6 +152,8 @@ body {
  .profile-icon {
      border-radius: 4px;
      max-width: 330px;
+     margin-left: auto;
+    display: block;
 }
  .zoom-hover {
      transition: 0.3s;
@@ -297,15 +299,16 @@ body {
 
 .full-screen-container {
   height: 100vh;
+  min-height:500px;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hello {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
 }
 
 .links a {
