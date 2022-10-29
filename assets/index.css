@@ -50,7 +50,7 @@ body {
  @supports ((backdrop-filter: blur(2em))) {
      .topbar {
          background-color: rgb(37, 37, 37, 40%) !important;
-         backdrop-filter: blur(9.2px) saturate(1.8) !important;
+         backdrop-filter: blur(9.2px)  !important;
          box-shadow: shad;
          /* box-shadow: 5px 2px 5px #00000036; */
     }
