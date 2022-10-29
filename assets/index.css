@@ -257,6 +257,7 @@ body {
  .project-card-info {
      padding-left: 0px;
      padding-right: 0px;
+     padding: 10px;
 }
 .project-card-info img {
      border-radius: 2px;
