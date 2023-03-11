@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<link href="./assets/timeline.css" rel="stylesheet">
 	<link href="./assets/index.css" rel="stylesheet">
 	<link href="./assets/mobile.css" rel="stylesheet">
@@ -60,8 +61,9 @@
 				<div class="container-fluid section-1" id="hello">
 					<div class="row">
 						<div class="col-md-7">
-							<h1 class="fw-100 intro-text">I am Jake Nelson</h1>
-							<p class="description">Full Stack Web Developer & Musician from the United Kingdom</p>
+							<h1 class="title-fill-1 fw-100 intro-text">I am</h1>
+							<div class="title-fill-2 fw-100 bg-style-name">Jake Nelson</div>
+							<p class="description"><!-- Full Stack Web Developer & Musician from the United Kingdom --></p>
 							<table class="social-links">
 								<tbody><tr>
 									<td>PHONE</td>
@@ -413,7 +415,27 @@ $(document).ready(function() {
 	particlesJS("particles-js", particles_config);
 
 </script>
+<script>
+								
+	var titleFillTyperWriter = new Typewriter($('.title-fill-1').get(0), {loop: false, delay: 75, showCursor: false});
+	var titleFillTyperWriter2 = new Typewriter($('.title-fill-2').get(0), {loop: false, delay: 75, showCursor: false});
 
+	titleFillTyperWriter
+		.typeString('I am')
+		.start().callFunction(() => {
+			setTimeout(() => {
+				titleFillTyperWriter2
+				.typeString('Jake Nelson')
+				.start().callFunction(() => {
+					$('.title-fill-2').find('.Typewriter__cursor').remove()
+					var descriptionFillTyperWriter2 = new Typewriter($('.description').get(0), {loop: false, delay: 35 });
+					descriptionFillTyperWriter2.typeString("Full Stack Web Developer from the United Kingdom")
+					.start()
+				})
+			}, 10)
+	})
+
+</script>
 <!--
 TODO:
 	- Use Babel to transpile to allow for ES6 on older browsers ie. Internet Explorer 11
