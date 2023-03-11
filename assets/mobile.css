@@ -6,7 +6,8 @@
    #nav-menu {
      display: none;
    }
-   .intro-text {
+   .intro-text,
+   .bg-style-name {
      font-size: 35px !important;
    }
    .menu-widget {
@@ -14,5 +15,8 @@
    }
    .profile-icon {
      display: none !important;
+   }
+   
+
    }
 }
