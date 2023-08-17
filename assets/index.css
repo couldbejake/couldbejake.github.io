@@ -243,16 +243,6 @@ body {
      margin-right: 15px;
      cursor: pointer;
 }
- .contact-btn {
-     background-color: rgb(50, 50, 50);
-     color: white;
-     padding: 10px;
-     border-radius: 50px;
-     width: 50%;
-     text-align: center;
-     margin-left: 15px;
-     cursor: pointer;
-}
  .project-card {
      border: 1px solid rgb(63 63 63);
      margin-bottom: 30px;
