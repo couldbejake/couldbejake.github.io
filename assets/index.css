@@ -217,7 +217,7 @@ body {
      cursor: pointer;
 }
  .contact-btn {
-    background-color: rgb(50 50 50 / 41%);
+    background-color: rgb(50 50 50 / 35%);
     color: white;
     padding: 10px;
     border-radius: 50px;
@@ -227,6 +227,7 @@ body {
     cursor: pointer;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+      border: 1px solid #434343;
 }
  .page-2 {
      width: 100%;
