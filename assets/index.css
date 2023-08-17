@@ -51,6 +51,7 @@ body {
      .topbar {
          background-color: rgb(37, 37, 37, 40%) !important;
          backdrop-filter: blur(9.2px)  !important;
+          -webkit-backdrop-filter: blur(9.2px)  !important;
          box-shadow: shad;
          /* box-shadow: 5px 2px 5px #00000036; */
     }
@@ -159,7 +160,7 @@ body {
      transition: 0.3s;
 }
  .zoom-hover:hover {
-     transform: scale(1.05);
+     transform: scale(1.05) rotate(5deg);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
  .saturate-hover {
@@ -251,8 +252,9 @@ body {
  .project-card {
      border: 1px solid rgb(63 63 63);
      margin-bottom: 30px;
-     border-radius: 4px;
-     background: #2b2b2b;
+     border-radius: 10px;
+     backdrop-filter: blur(7px);
+     -webkit-backdrop-filter: blur(7px);
 }
  .project-card-info {
      padding-left: 0px;
@@ -260,7 +262,7 @@ body {
      padding: 10px;
 }
 .project-card-info img {
-     border-radius: 2px;
+     border-radius: 5px;
 }
  .project-text {
      padding: 30px;
