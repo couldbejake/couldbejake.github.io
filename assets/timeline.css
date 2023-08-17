@@ -8,7 +8,7 @@
   .timeline-line {
     width: 1px;
     left: 5px;
-    background-color: white;
+    background-color: #00f29a;
     height: calc(100% - 2rem);
     position: absolute;
     margin-top: 9px;
