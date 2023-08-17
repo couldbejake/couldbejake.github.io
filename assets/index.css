@@ -89,7 +89,7 @@ body {
      padding-bottom: 60px;
 }
  .social-links > tbody > tr > td:first-child {
-     width: 100px;
+     width: 65px;
      font-weight: 300;
 }
  .social-links > tbody > tr > td:nth-child(2) {
@@ -112,6 +112,7 @@ body {
  .social-links > tbody > tr > td {
      padding-top: 4px;
      padding-bottom: 4px;
+     color: darkgray;
 }
  .description {
      font-weight: 100;
@@ -355,7 +356,7 @@ body {
 .bg-style-name {
     background: -webkit-linear-gradient(left, #00f298, #07f7f7);
     display: inline-block;
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     color: #1a1a1a;
