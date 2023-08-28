@@ -107,13 +107,20 @@ body {
      padding-bottom: 4px;
      color: darkgray;
 }
- .description {
+ .intro-description {
      font-weight: 100;
      font-size: 20px;
      padding-top: 15px;
      padding-bottom: 15px;
      margin-bottom: 0px;
      height: 60px;
+}
+ .description {
+     font-weight: 100;
+     font-size: 20px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin-bottom: 0px;
 }
  .fw-100 {
      font-weight: 100;
