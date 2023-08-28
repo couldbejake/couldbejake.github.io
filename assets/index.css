@@ -298,7 +298,8 @@ body {
 }
 
 .full-screen-container {
-  height: 100vh;
+  height: calc(100vh - 69px);
+  margin-top: 69px;
   min-height:500px;
   width: 100%;
   position: relative;
