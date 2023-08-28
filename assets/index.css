@@ -346,10 +346,11 @@ height: calc( 100vh - 69px);
 }
 
 #particles-js-container {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0px;
+    height: calc(100vh + 500px);
+    width: calc(100vw + 500px);
+    position: fixed;
+    top: -500px;
+    left: -500px;
 }
 #particles-js {
   position: absolute;
