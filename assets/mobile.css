@@ -45,4 +45,7 @@
     background-position: fixed;
     background-attachment: fixed;
    }
+   html {
+    background: rgb(47, 47, 47);
+   }
 }
