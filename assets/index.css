@@ -397,3 +397,6 @@ height: calc( 100vh - 69px);
      margin-left: -14px !important;
      margin-right: -14px !important;
 }
+.social-links tr {
+     vertical-align: middle;
+}
