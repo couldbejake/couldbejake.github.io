@@ -126,6 +126,10 @@ body {
      font-weight: 300;
      color: white;
 }
+ .fw-400 {
+     font-weight: 300;
+     color: white;
+}
  .intro-text {
      background: -webkit-linear-gradient(left, #00f298, #07f7f7);
      -webkit-background-clip: text;
