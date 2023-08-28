@@ -403,4 +403,5 @@ height: calc( 100vh - 69px);
 
 .to-top td {
      text-decoration: underline;
+     cursor: pointer;
 }
