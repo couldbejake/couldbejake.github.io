@@ -400,3 +400,7 @@ height: calc( 100vh - 69px);
 .social-links tr {
      vertical-align: middle;
 }
+
+.to-top td {
+     text-decoration: underline;
+}
