@@ -48,4 +48,7 @@
    html {
     background: rgb(47, 47, 47);
    }
+   .intro-description {
+      height: 120px;
+   }
 }
