@@ -165,7 +165,6 @@ body {
      max-width: 293px;
      margin-left: auto;
      display: block;
-    background-color: rgb(50 50 50 / 35%);
     backdrop-filter: blur(4px);
      -webkit-backdrop-filter: blur(4px);
     border: 1px solid #434343;
