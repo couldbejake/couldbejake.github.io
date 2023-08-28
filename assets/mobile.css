@@ -40,4 +40,9 @@
     top: 0px !important;
     left: 0px !important;
    }
+   body {
+    background: rgb(47, 47, 47);
+    background-position: fixed;
+    background-attachment: fixed;
+   }
 }
