@@ -472,8 +472,8 @@ $(document).ready(function() {
 				.typeString('Jake Nelson')
 				.start().callFunction(() => {
 
-					$('.intro-text').find('.Typewriter__cursor').css('opacity', '0');
-					$('.bg-style-name').find('.Typewriter__cursor').css('opacity', '0');
+					$('.intro-text').find('.Typewriter__cursor').css('color', 'transparent');
+					$('.bg-style-name').find('.Typewriter__cursor').css('color', 'transparent');
 					
 					var descriptionFillTyperWriter2 = new Typewriter($('.description').get(0), {loop: false, delay: 35 });
 					
@@ -481,7 +481,7 @@ $(document).ready(function() {
 					
 					descriptionFillTyperWriter2.typeString("> Full Stack Web Developer from the United Kingdom")
 					.start().callFunction(() => {
-						$('.description').find('.Typewriter__cursor').css('opacity', '0');
+						$('.description').find('.Typewriter__cursor').css('color', 'transparent');
 					})
 					
 					
