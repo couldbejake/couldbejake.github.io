@@ -87,7 +87,8 @@ body {
 }
  .social-links > tbody > tr > td:first-child {
      width: 65px;
-     font-weight: 300;
+     font-weight: 500;
+     color: #6e6e6e;
 }
  .social-links > tbody > tr > td:nth-child(2) {
      color: white;
