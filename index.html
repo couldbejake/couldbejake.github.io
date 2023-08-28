@@ -466,12 +466,14 @@ $(document).ready(function() {
 	titleFillTyperWriter
 		.typeString('I am')
 		.start().callFunction(() => {
+			$('.intro-text').find('.Typewriter__cursor').css('opacity', '0');
 			setTimeout(() => {
 				titleFillTyperWriter2
 				.typeString('Jake Nelson')
 				.start().callFunction(() => {
 
 					$('.intro-text').find('.Typewriter__cursor').css('opacity', '0');
+					$('.bg-style-name').find('.Typewriter__cursor').css('opacity', '0');
 					
 					var descriptionFillTyperWriter2 = new Typewriter($('.description').get(0), {loop: false, delay: 35 });
 					
@@ -479,7 +481,7 @@ $(document).ready(function() {
 					
 					descriptionFillTyperWriter2.typeString("> Full Stack Web Developer from the United Kingdom")
 					.start().callFunction(() => {
-						$('.bg-style-name').find('.Typewriter__cursor').css('opacity', '0');
+						$('.description').find('.Typewriter__cursor').css('opacity', '0');
 					})
 					
 					
