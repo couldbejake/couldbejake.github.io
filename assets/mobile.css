@@ -14,6 +14,9 @@
      display: none !important;
    }
    
-
+   .full-screen-container {
+      min-height: -webkit-fill-available;
+      height: 100vh !important;
+      margin-top: 0px !important;
    }
 }
