@@ -172,6 +172,14 @@ body {
     background-color: rgb(255 255 255 / 4%);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+ .zoom-hover-text {
+     transition: 0.3s;
+}
+ .zoom-hover-text:hover {
+    transform: scale(1.03);
+    background-color: rgb(255 255 255 / 4%);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
  .saturate-hover {
      transition: 0.3s;
 }
