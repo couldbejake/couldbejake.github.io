@@ -156,7 +156,9 @@ body {
      border-radius: 4px;
      max-width: 293px;
      margin-left: auto;
-    display: block;
+     display: block;
+     background-color: #ffffff1f;
+     backdrop-filter: blur(4px);
 }
  .zoom-hover {
      transition: 0.3s;
