@@ -250,6 +250,7 @@ body {
      border-radius: 10px;
      backdrop-filter: blur(7px);
      -webkit-backdrop-filter: blur(7px);
+     background: rgb(50 50 50 / 35%);
 }
  .project-card-info {
      padding-left: 0px;
