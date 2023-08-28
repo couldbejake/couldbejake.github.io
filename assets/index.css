@@ -271,8 +271,8 @@ body {
      border: 1px solid rgb(63 63 63);
      margin-bottom: 30px;
      border-radius: 10px;
-     backdrop-filter: blur(7px);
-     -webkit-backdrop-filter: blur(7px);
+     backdrop-filter: blur(3px);
+     -webkit-backdrop-filter: blur(3px);
      background: rgb(50 50 50 / 35%);
 }
  .project-card-info {
