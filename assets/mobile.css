@@ -24,4 +24,18 @@
     margin-bottom: 22px !important;
     font-weight: 300 !important;
    }
+
+   .section-title {
+       background: none;
+       color: #00f298;
+       -webkit-background-clip: border-box;
+       -webkit-text-fill-color: currentColor;
+   }
+
+   .intro-text {
+       background: none;
+       color: #00f298;
+       -webkit-background-clip: border-box;
+       -webkit-text-fill-color: currentColor;
+   }
 }
