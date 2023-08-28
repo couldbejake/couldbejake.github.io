@@ -36,4 +36,12 @@
        color: #00f298;
       font-weight: 500;
    }
+
+   #particles-js-container {
+    height: 100vh !important;
+    width: 100vw !important;
+    position: fixed;
+    top: 0px !important;
+    left: 0px !important;
+   }
 }
