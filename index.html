@@ -363,8 +363,12 @@
 						<td><i class="fas fa-phone"></i></td>
 						<td>+44 7895 643 603</td>
 					</tr>
-					<tr>
+					<tr class="to-top">
 						<td><i class="fas fa-envelope"></i></td>
+						<td>couldbejake@gmail.com</td>
+					</tr>
+					<tr>
+						<td><i class="fas fa-angle-double-up"></i></td>
 						<td>couldbejake@gmail.com</td>
 					</tr>
 				</tbody></table>
@@ -388,6 +392,11 @@ $(document).ready(function() {
 	$('.contact-btn').on('click', function() {
 		$([document.documentElement, document.body]).animate({
 			scrollTop: $('#contact').offset().top - 100
+		}, 1000);
+	})
+	$('.to-top').on('click', function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: 0
 		}, 1000);
 	})
 	$('a').on('click', function(e) {
