@@ -439,13 +439,15 @@ $(document).ready(function() {
 		data.forEach((skill, i) => {
 			var rot_mod = skill.amount
 
+			// <div class='skillbar-percentage' style='width:${skill.amount}%;filter: hue-rotate(${rot_mod}deg);'></div>
+			
 			_html = `
 			<div class='skill-section'>
 				<p class='skill-description'>
 					<span>${skill.name}</span> <span class='float-right'>${skill.amount}%</span>
 				</p>
 				<div class='skillbar'>
-					<div class='skillbar-percentage' style='width:${skill.amount}%;filter: hue-rotate(${rot_mod}deg);'></div>
+					<div class='skillbar-percentage' style='width:${skill.amount}%;'></div>
 				 </div>
 			</div>`
 
