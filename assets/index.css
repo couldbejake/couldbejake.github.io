@@ -269,7 +269,7 @@ body {
     bottom: 0;
     border-radius: 9999px;
     padding: 1px;
-    background: linear-gradient(337deg, #00d8ff, #0779f7);
+    background: linear-gradient(337deg, #00d8ff, #00c4ff);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
   }
@@ -283,7 +283,7 @@ body {
     bottom: 0;
     border-radius: 9999px;
     padding: 1px;
-    background: linear-gradient(150deg, #008a58, #a8e989);
+    background: linear-gradient(150deg, #008a58, rgb(193, 233, 137));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
   }
@@ -314,9 +314,11 @@ body {
     padding: 17px;
     border-radius: 50px;
     text-align: center;
+    margin-left: 15px;
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    margin-left: 0px;
     width: 100%;
     display: block;
     position: relative;
