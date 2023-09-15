@@ -317,7 +317,9 @@ body {
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    /* border: 2px solid #008a87; */
+    width: 100%;
+    display: block;
+    position: relative;
 }
 .contact-btn:hover {
     border-color: #07f7f2;
