@@ -248,19 +248,60 @@ body {
      margin-right: 15px;
      cursor: pointer;
 }*/
+.download-border {
+    width: 50%;
+    border-radius: 50px;    
+}
+
+.contact-border {
+    width: 50%;
+    border-radius: 50px;
+    margin-left: 15px;
+
+}
+
+.download-cv-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    padding: 1px;
+    background: linear-gradient(337deg, #00d8ff, #0779f7);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+
+  .contact-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    padding: 1px;
+    background: linear-gradient(150deg, #008a58, #a8e989);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+
 .download-cv-btn {
     background-color: rgb(50 50 50 / 35%);
     color: white;
     padding: 17px;
     border-radius: 50px;
-    width: 50%;
     text-align: center;
     margin-left: 15px;
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 2px solid #018759;
     margin-left: 0px;
+    width: 100%;
+    display: block;
+    position: relative;
 }
 .download-cv-btn:hover {
     text-decoration: none;
@@ -272,13 +313,11 @@ body {
     color: white;
     padding: 17px;
     border-radius: 50px;
-    width: 50%;
     text-align: center;
-    margin-left: 15px;
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 2px solid #008a87;
+    /* border: 2px solid #008a87; */
 }
 .contact-btn:hover {
     border-color: #07f7f2;
@@ -395,7 +434,7 @@ height: calc( 100vh - 69px);
 }
 
 .bg-style-name {
-    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    background: linear-gradient(90deg, #00f298, #07f7f7);
     display: inline-block;
     font-size: 40px;
     font-weight: 700;
