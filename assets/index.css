@@ -34,7 +34,7 @@ body {
      text-decoration: none;
 }
  .centered {
-     max-width:1000px;
+     max-width:1200px;
      margin: 0 auto;
 }
  .list-inline {
@@ -110,12 +110,12 @@ body {
 }
  .intro-description {
      font-weight: 100;
-     font-size: 24px;
+     font-size: 20px;
      padding-top: 15px;
      padding-bottom: 15px;
      margin-bottom: 0px;
-     height: 60px;
-     font-family: 'VT323', monospace;
+     font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
 }
  .description {
      font-weight: 100;

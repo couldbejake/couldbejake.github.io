@@ -6,11 +6,11 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100&family=VT323&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100&family=Ubuntu+Mono&family=VT323&display=swap" rel="stylesheet">
 
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -490,9 +490,10 @@ $(document).ready(function() {
 					
 					var descriptionFillTyperWriter2 = new Typewriter($('.intro-description').get(0), {loop: false, delay: 35 });
 					
-					// updated
-					
-					descriptionFillTyperWriter2.typeString("> Full Stack Web Developer from the United Kingdom")
+					// TODO: update to echo statement, with syntax highlighting for echo command.
+					// Clean up this code, it does not give a good impression! maybe await?
+
+					descriptionFillTyperWriter2.typeString("<span style='color:#01ffa1'>jake@couldbejake.io</span>:<span style='color:#00c4ff'>~</span>$ Full Stack Web Developer from the United Kingdom")
 					.start().callFunction(() => {
 						$('.intro-description').find('.Typewriter__cursor').css('color', 'transparent');
 					})
