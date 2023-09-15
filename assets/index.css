@@ -109,6 +109,8 @@ body {
      font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
     min-height: 57px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
  .description {
      font-weight: 100;
@@ -232,7 +234,7 @@ body {
      margin-bottom: 15px;
 }
  .social-btns {
-     margin-top: 20px;
+     margin-top: 25px;
 }
 /*
  .download-cv-btn {
