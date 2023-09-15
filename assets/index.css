@@ -25,14 +25,6 @@ body {
  .list-inline li div:hover {
      text-decoration: underline;
 }
- .download-cv-btn {
-     color: black;
-      filter: drop-shadow( 0px 0px 3px #00f2988a);
-}
- .download-cv-btn:hover {
-     color: black;
-     text-decoration: none;
-}
  .centered {
      max-width:1200px;
      margin: 0 auto;
@@ -116,6 +108,7 @@ body {
      margin-bottom: 0px;
      font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
+    min-height: 57px;
 }
  .description {
      font-weight: 100;
@@ -241,6 +234,7 @@ body {
  .social-btns {
      margin-top: 20px;
 }
+/*
  .download-cv-btn {
      background-color: #03f5c8;
      background-image: linear-gradient(to right, #00f298, #07f7f7);
@@ -251,11 +245,11 @@ body {
      text-align: center;
      margin-right: 15px;
      cursor: pointer;
-}
- .contact-btn {
+}*/
+.download-cv-btn {
     background-color: rgb(50 50 50 / 35%);
     color: white;
-    padding: 10px;
+    padding: 17px;
     border-radius: 50px;
     width: 50%;
     text-align: center;
@@ -263,21 +257,32 @@ body {
     cursor: pointer;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-      border: 1px solid #434343;
+    border: 2px solid #018759;
+    margin-left: 0px;
+}
+.download-cv-btn:hover {
+    text-decoration: none;
+    border-color: #01f3a0;
+    color: white;
+}
+ .contact-btn {
+    background-color: rgb(50 50 50 / 35%);
+    color: white;
+    padding: 17px;
+    border-radius: 50px;
+    width: 50%;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 2px solid #008a87;
+}
+.contact-btn:hover {
+    border-color: #07f7f2;
 }
  .page-2 {
      width: 100%;
-}
- .download-cv-btn {
-     background-color: #03f5c8;
-     background-image: linear-gradient(to right, #00f298, #07f7f7);
-     padding: 10px;
-     border-radius: 50px;
-     color: black;
-     width: 50%;
-     text-align: center;
-     margin-right: 15px;
-     cursor: pointer;
 }
  .project-card {
      border: 1px solid rgb(63 63 63);
