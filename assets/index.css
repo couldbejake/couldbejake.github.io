@@ -302,6 +302,8 @@ body {
      padding-left: 0px;
      padding-right: 0px;
      padding: 10px;
+     display: flex;
+     place-items: center;
 }
 .project-card-info img {
      border-radius: 5px;
