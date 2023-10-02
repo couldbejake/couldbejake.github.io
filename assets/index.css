@@ -300,7 +300,7 @@ body {
  .project-card-info {
      padding-left: 0px;
      padding-right: 0px;
-     padding: 10px;
+     padding: 20px;
      display: flex;
      place-items: center;
 }
@@ -317,6 +317,7 @@ body {
 }
  .project-description {
      font-weight: 100;
+      font-size: 14px;
 }
  .project-stack .project-stack-item {
      display: inline-block;
