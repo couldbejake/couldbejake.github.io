@@ -32,7 +32,7 @@ body {
  .centered {
      max-width:var(--page-width);
      margin: 0 auto;
-     padding: 20px;
+     padding:10px;
 }
  .list-inline {
      text-align: right;
@@ -48,8 +48,6 @@ body {
    position: fixed;
    width: 100%;
    z-index: 99;
-   padding-top: 15px;
-   padding-bottom: 15px;
    top: 0px;
    left: 0px;
    background-color: rgb(50 50 50 / 35%);
@@ -118,8 +116,8 @@ body {
 }
  .description {
      font-weight: 100;
-     font-size: 20px;
-     padding-top: 15px;
+     font-size: 16px;
+     padding-top: 30px;
      padding-bottom: 15px;
      margin-bottom: 0px;
 }
