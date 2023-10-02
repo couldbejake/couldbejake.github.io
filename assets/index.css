@@ -300,7 +300,6 @@ body {
  .project-card-info {
      padding-left: 0px;
      padding-right: 0px;
-     padding: 20px;
      display: flex;
      place-items: center;
 }
