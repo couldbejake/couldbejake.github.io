@@ -32,6 +32,7 @@ body {
  .centered {
      max-width:var(--page-width);
      margin: 0 auto;
+     padding: 20px;
 }
  .list-inline {
      text-align: right;
@@ -112,8 +113,8 @@ body {
      margin-bottom: 0px;
      font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
  .description {
      font-weight: 100;
