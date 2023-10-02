@@ -195,6 +195,7 @@ body {
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
  .zoom-project {
+    min-height: 330px;
     transition: 0.3s;
     height: 100%;
     width: 100%;
