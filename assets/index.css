@@ -1,3 +1,7 @@
+:root {
+    --page-width: 1000px;
+  }
+
 html, body {
      font-family: 'Roboto', sans-serif;
      color: white;
@@ -26,7 +30,7 @@ body {
      text-decoration: underline;
 }
  .centered {
-     max-width:1200px;
+     max-width:var(--page-width);
      margin: 0 auto;
 }
  .list-inline {
@@ -191,7 +195,13 @@ body {
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
  .zoom-project {
-     transition: 0.3s;
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+    background-repeat: no-repeat;
 }
  .zoom-project:hover {
     transform: scale(1.03);
@@ -289,6 +299,8 @@ body {
  .page-2 {
      width: 100%;
 }
+
+
  .project-card {
      border: 1px solid rgb(63 63 63);
      margin-bottom: 30px;
@@ -296,6 +308,7 @@ body {
      backdrop-filter: blur(3px);
      -webkit-backdrop-filter: blur(3px);
      background: rgb(50 50 50 / 35%);
+     max-width: var(--page-width);
 }
  .project-card-info {
      padding-left: 0px;
@@ -304,7 +317,7 @@ body {
      place-items: center;
 }
 .project-card-info img {
-     border-radius: 5px;
+     border-radius: 9px;
 }
  .project-text {
      padding: 30px;
@@ -324,6 +337,9 @@ body {
      border: 1px solid #434343;
      padding: 5px;
      margin-top: 10px;
+}
+.project-stack {
+    min-height: 92px;
 }
  .social-link {
      color: white;
@@ -418,8 +434,8 @@ height: calc( 100vh - 69px);
 }
 
 .row {
-     margin-left: -14px !important;
-     margin-right: -14px !important;
+     margin-left: -15px !important;
+     margin-right: -15px !important;
 }
 .social-links tr {
      vertical-align: middle;
