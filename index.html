@@ -492,6 +492,7 @@ $(document).ready(function() {
 
 					$('.intro-text').find('.Typewriter__cursor').css('color', 'transparent');
 					$('.bg-style-name').find('.Typewriter__cursor').css('color', 'transparent');
+					$('.bg-style-name').find('.Typewriter__cursor').css('animation', 'none');
 					
 					var descriptionFillTyperWriter2 = new Typewriter($('.intro-description').get(0), {loop: false, delay: 35 });
 					
@@ -501,6 +502,7 @@ $(document).ready(function() {
 					descriptionFillTyperWriter2.typeString("<span style='color:#01ffa1'>jake@couldbejake.io</span>:<span style='color:#00c4ff'>~</span>$ Full Stack Web Developer from the United Kingdom")
 					.start().callFunction(() => {
 						$('.intro-description').find('.Typewriter__cursor').css('color', 'transparent');
+						$('.intro-description').find('.Typewriter__cursor').css('animation', 'none');
 					})
 					
 					
